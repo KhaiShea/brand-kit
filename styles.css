@@ -5,7 +5,7 @@
  * Author:      UniQ Design Team
  * Version:     1.0.0
  * Repository:  Private - UniQ Committee access only
- * Licence:     © Copyright Khai Dye-Brinkman and The Queer Students Association of Te Herenga Waka Victoria University of Wellington Incorporated, 2026. All Rights Reserved.
+ * Licence:     © Copyright Khai Dye-Brinkman and The Queer Students Association of Te Herenga Waka Victoria University of Wellington Incorporated, 2025. All Rights Reserved.
  *
  * Table of Contents
  * -----------------
@@ -16,22 +16,27 @@
  *  5. Layout Utilities
  *  6. Section Structure
  *  7. Cards
- *  8. Badges & Pills
- *  9. Logo System
- * 10. Colour Swatches
- * 11. Typography Specimens
- * 12. Do / Don't Boxes
- * 13. Tables
- * 14. Persona Cards
- * 15. Social Cards
- * 16. Spacing Visualiser
- * 17. Motion & Animation
+ *  8. Font Blocks (Typography Specimens)
+ *  9. Badges & Pills
+ * 10. Logo System
+ * 11. Colour Swatches
+ * 12. Colour Usage Examples
+ * 13. Do / Don't Boxes
+ * 14. Tables
+ * 15. Spacing Visualiser
+ * 16. Persona Cards
+ * 17. Social Cards
  * 18. Pillar Grid
- * 19. Colour Usage Examples
+ * 19. Motion & Animation
  * 20. Fade-In Animation
  * 21. Footer
  * 22. Responsive Overrides
  */
+
+
+/* =============================================================
+   1. Custom Properties (Design Tokens)
+   ============================================================= */
 
 :root {
   --coral:#df7d7d; --peach:#efc26b; --mint:#90ce76;
@@ -41,10 +46,20 @@
   --grad:linear-gradient(90deg,#df7d7d 0%,#efc26b 21%,#90ce76 40%,#93b8cb 62%,#a381da 80%,#cd9bc6 100%);
   --grad-d:linear-gradient(135deg,#df7d7d 0%,#efc26b 21%,#90ce76 40%,#93b8cb 62%,#a381da 80%,#cd9bc6 100%);
 }
+
+
+/* =============================================================
+   2. Reset & Base
+   ============================================================= */
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink);line-height:1.6}
 
-/* COVER */
+
+/* =============================================================
+   3. Cover / Hero Section
+   ============================================================= */
+
 .cover{min-height:100vh;background:var(--ink);display:flex;flex-direction:column;
   align-items:center;justify-content:center;text-align:center;position:relative;overflow:hidden;padding:4rem 2rem}
 .orb{position:absolute;border-radius:50%;filter:blur(100px);pointer-events:none}
@@ -64,7 +79,11 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
   border-radius:999px;padding:.6rem 1.5rem;font-size:.75rem;color:rgba(255,255,255,.4)}
 .grad-strip{height:4px;background:var(--grad)}
 
-/* NAV */
+
+/* =============================================================
+   4. Navigation
+   ============================================================= */
+
 .topnav{position:sticky;top:0;z-index:99;background:rgba(28,28,46,.96);
   backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.07)}
 .topnav-inner{max-width:1280px;margin:0 auto;padding:0 2rem;
@@ -78,8 +97,21 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
 .nav-item.active{color:#fff;border-bottom-color:var(--lavender)}
 .nav-num{font-size:.58rem;opacity:.4}
 
-/* LAYOUT */
+
+/* =============================================================
+   5. Layout Utilities
+   ============================================================= */
+
 .wrap{max-width:1280px;margin:0 auto;padding:0 2rem}
+.g3{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem}
+.g2{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1.25rem}
+.g4{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem}
+
+
+/* =============================================================
+   6. Section Structure
+   ============================================================= */
+
 .sec{padding:5rem 0;border-bottom:1px solid var(--border)}
 .sec:last-child{border-bottom:none}
 .sec-head{margin-bottom:3rem}
@@ -90,12 +122,11 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
 .sec-title{font-size:clamp(1.75rem,3.5vw,2.75rem);font-weight:700;line-height:1.1;font-family:'Pikimisa Regular','Lexend Deca',sans-serif}
 .sec-desc{font-size:.95rem;color:var(--mid);max-width:600px;margin-top:.6rem;line-height:1.75}
 
-/* GRIDS */
-.g3{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem}
-.g2{display:grid;grid-template-columns:repeat(auto-fill,minmax(380px,1fr));gap:1.25rem}
-.g4{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1rem}
 
-/* CARD */
+/* =============================================================
+   7. Cards
+   ============================================================= */
+
 .card{background:var(--white);border:1px solid var(--border);border-radius:16px;
   padding:1.75rem;transition:box-shadow .2s,transform .2s}
 .card:hover{box-shadow:0 8px 30px rgba(0,0,0,.07);transform:translateY(-2px)}
@@ -104,7 +135,11 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
 .card-title{font-size:1rem;font-weight:700;margin-bottom:.4rem}
 .card-body{font-size:.875rem;color:var(--mid);line-height:1.75}
 
-/* FONT BLOCKS - fixed: explicit heights prevent overflow */
+
+/* =============================================================
+   8. Font Blocks (Typography Specimens)
+   ============================================================= */
+
 .font-block{background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
 .font-header{padding:2rem 2rem 1.5rem;border-bottom:1px solid var(--border);flex-shrink:0}
 .font-meta-panel{padding:1.25rem 2rem;background:var(--off);flex-shrink:0}
@@ -124,26 +159,30 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
 .meta-item .meta-label{font-size:.62rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--mid);margin-bottom:.2rem}
 .meta-item .meta-val{font-size:.82rem;font-weight:600;color:var(--ink)}
 
-/* COLOUR SWATCHES */
-.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem}
-.swatch{border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--white)}
-.swatch-chip{height:96px;display:flex;align-items:flex-end;padding:.75rem;font-size:.7rem;font-weight:600}
-.swatch-info{padding:.875rem}
-.swatch-name{font-size:.82rem;font-weight:700;margin-bottom:.15rem}
-.swatch-hex{font-size:.72rem;color:var(--mid)}
-.swatch-role{font-size:.7rem;color:var(--mid);margin-top:.2rem;line-height:1.5}
-.grad-swatch{border-radius:12px;overflow:hidden;border:1px solid var(--border);grid-column:1/-1}
-.grad-chip{height:80px}
-.grad-body{padding:1rem;background:var(--white)}
 
-/* COLOUR EXAMPLES */
-.colour-examples{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:1rem}
-.colour-ex{border-radius:12px;overflow:hidden;border:1px solid var(--border)}
-.colour-ex-preview{height:60px;display:flex;align-items:center;justify-content:center;
-  font-size:.85rem;font-weight:700;letter-spacing:.02em}
-.colour-ex-label{padding:.6rem .875rem;background:var(--white);font-size:.72rem;color:var(--mid);line-height:1.5}
+/* =============================================================
+   9. Badges & Pills
+   ============================================================= */
 
-/* LOGO GRID */
+.badge{display:inline-block;font-size:.62rem;font-weight:700;padding:.2rem .55rem;border-radius:4px;margin-top:1rem;letter-spacing:.05em}
+.badge-do{background:#e8f7e0;color:#1c1c2e}
+.badge-dont{background:#fce8e8;color:#1c1c2e}
+.badge-ctx{background:#e8f3ff;color:#1c1c2e}
+
+.pill{display:inline-block;font-size:.68rem;font-weight:700;
+  padding:.25rem .65rem;border-radius:999px;margin:.2rem .15rem;margin-top:.75rem}
+.p-coral{background:#fef5f5;color:var(--ink)}
+.p-peach{background:#fffbeb;color:#92400e}
+.p-mint{background:#e8f7e0;color:#1c1c2e}
+.p-sky{background:#e8f3ff;color:#1c1c2e}
+.p-lav{background:#f0ebff;color:#1c1c2e}
+.p-blush{background:#f9f0f7;color:#1c1c2e}
+
+
+/* =============================================================
+   10. Logo System
+   ============================================================= */
+
 .logo-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.25rem}
 .logo-card{border-radius:16px;overflow:hidden;border:1px solid var(--border)}
 .logo-preview{height:220px;display:flex;align-items:center;justify-content:center;padding:1.5rem}
@@ -155,12 +194,39 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
 .logo-meta-panel{padding:1rem 1.25rem;background:var(--white);border-top:1px solid var(--border)}
 .logo-meta-name{font-size:.85rem;font-weight:700}
 .logo-meta-desc{font-size:.75rem;color:var(--mid);margin-top:.2rem;line-height:1.5}
-.badge{display:inline-block;font-size:.62rem;font-weight:700;padding:.2rem .55rem;border-radius:4px;margin-top:1rem;letter-spacing:.05em}
-.badge-do{background:#e8f7e0;color:#1c1c2e}
-.badge-dont{background:#fce8e8;color:#1c1c2e}
-.badge-ctx{background:#e8f3ff;color:#1c1c2e}
 
-/* DO/DONT */
+
+/* =============================================================
+   11. Colour Swatches
+   ============================================================= */
+
+.swatches{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem}
+.swatch{border-radius:12px;overflow:hidden;border:1px solid var(--border);background:var(--white)}
+.swatch-chip{height:96px;display:flex;align-items:flex-end;padding:.75rem;font-size:.7rem;font-weight:600}
+.swatch-info{padding:.875rem}
+.swatch-name{font-size:.82rem;font-weight:700;margin-bottom:.15rem}
+.swatch-hex{font-size:.72rem;color:var(--mid)}
+.swatch-role{font-size:.7rem;color:var(--mid);margin-top:.2rem;line-height:1.5}
+.grad-swatch{border-radius:12px;overflow:hidden;border:1px solid var(--border);grid-column:1/-1}
+.grad-chip{height:80px}
+.grad-body{padding:1rem;background:var(--white)}
+
+
+/* =============================================================
+   12. Colour Usage Examples
+   ============================================================= */
+
+.colour-examples{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:1rem}
+.colour-ex{border-radius:12px;overflow:hidden;border:1px solid var(--border)}
+.colour-ex-preview{height:60px;display:flex;align-items:center;justify-content:center;
+  font-size:.85rem;font-weight:700;letter-spacing:.02em}
+.colour-ex-label{padding:.6rem .875rem;background:var(--white);font-size:.72rem;color:var(--mid);line-height:1.5}
+
+
+/* =============================================================
+   13. Do / Don't Boxes
+   ============================================================= */
+
 .dodont{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
 .do-box,.dont-box{border-radius:12px;padding:1.5rem}
 .do-box{border:1.5px solid var(--mint);background:#f3fdf0}
@@ -176,34 +242,43 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
 .rules li{font-size:.875rem;line-height:1.65;padding:.3rem 0 .3rem 1.6rem;position:relative}
 .do-box .rules li::before{content:'✓';position:absolute;left:0;color:#16a34a;font-weight:700;font-size:.8rem;line-height:1.8}
 .dont-box .rules li::before{content:'✕';position:absolute;left:0;color:#dc2626;font-weight:700;font-size:.8rem;line-height:1.8}
-/* Generic bullet for non do/dont lists */
 .rules li::before{content:'•';position:absolute;left:0;color:var(--mid);font-size:1rem;line-height:1.5}
 
-/* TABLE */
+
+/* =============================================================
+   14. Tables
+   ============================================================= */
+
 .tbl{width:100%;border-collapse:collapse;font-size:.82rem;background:var(--white);
   border-radius:12px;overflow:hidden;border:1px solid var(--border)}
 .tbl th{background:var(--ink);color:#fff;padding:.875rem 1.25rem;text-align:left;
   font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700}
 .tbl td{padding:.875rem 1.25rem;border-bottom:1px solid var(--border);vertical-align:top;line-height:1.6}
 .tbl tr:last-child td{border-bottom:none}
-.tbl tr:nth-child(even) td{background:#fafafa}
+.tbl tr:nth-child(even) td{background:var(--off)}
 .yes{color:#4a8c2a;font-weight:700}
 .no{color:#c0392b;font-weight:700}
 
-/* SPACING VISUAL */
+
+/* =============================================================
+   15. Spacing Visualiser
+   ============================================================= */
+
 .sp-row{display:flex;align-items:center;gap:1rem;padding:.5rem 0;border-bottom:1px solid var(--border)}
 .sp-bar{height:10px;border-radius:3px;background:var(--lavender);opacity:.7;flex-shrink:0}
 .sp-label{font-size:.72rem;min-width:65px;color:var(--mid)}
 .sp-use{font-size:.8rem}
-
-/* SPACING EXAMPLES */
 .sp-examples{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;margin-top:1.5rem}
 .sp-ex-card{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden}
 .sp-ex-label{font-size:.65rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
   color:var(--mid);padding:.75rem 1rem;border-bottom:1px solid var(--border);background:var(--off)}
 .sp-ex-demo{padding:1rem}
 
-/* PERSONA */
+
+/* =============================================================
+   16. Persona Cards
+   ============================================================= */
+
 .persona{border-radius:16px;overflow:hidden;border:1px solid var(--border);background:var(--white)}
 .persona-strip{height:6px;background:var(--grad)}
 .persona-body{padding:1.75rem}
@@ -212,55 +287,166 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
 .persona-cols{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem}
 .persona-col-label{font-size:.62rem;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--mid);margin-bottom:.3rem}
 
-/* SOCIAL CARDS */
+
+/* =============================================================
+   17. Social Cards
+   ============================================================= */
+
 .social-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:1.75rem}
 .social-icon{font-size:1.75rem;margin-bottom:.75rem}
 .icon-row{display:flex;align-items:flex-start;gap:.75rem;margin-bottom:.5rem}
 .icon-box{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;
   justify-content:center;font-size:1rem;background:var(--off);border:1px solid var(--border);flex-shrink:0}
 
-/* PILL */
-.pill{display:inline-block;font-size:.68rem;font-weight:700;
-  padding:.25rem .65rem;border-radius:999px;margin:.2rem .15rem;margin-top:.75rem}
-.p-coral{background:#fef5f5;color:var(--ink)}
-.p-peach{background:#fffbeb;color:#92400e}
-.p-mint{background:#e8f7e0;color:#1c1c2e}
-.p-sky{background:#e8f3ff;color:#1c1c2e}
-.p-lav{background:#f0ebff;color:#1c1c2e}
-.p-blush{background:#f9f0f7;color:#1c1c2e}
 
-/* PILLAR SPLIT - old style */
+/* =============================================================
+   18. Pillar Grid
+   ============================================================= */
+
 .pillar-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;margin-top:1rem}
 .pillar-card{border-radius:12px;padding:1.25rem;text-align:center;border:1px solid var(--border);background:var(--white)}
 .pillar-pct{font-size:2rem;font-weight:700;line-height:1}
 .pillar-name{font-size:.82rem;font-weight:700;margin:.35rem 0 .25rem}
 .pillar-desc{font-size:.75rem;color:var(--mid);line-height:1.5}
 
-/* MOTION */
+
+/* =============================================================
+   19. Motion & Animation
+   ============================================================= */
+
 .motion-btn{background:var(--lavender);color:#fff;border:none;border-radius:999px;
   padding:.7rem 2rem;font-family:'Lexend Deca',sans-serif;font-size:.9rem;font-weight:700;
   cursor:pointer;transition:transform .3s cubic-bezier(.34,1.56,.64,1),box-shadow .2s}
 .motion-btn:hover{transform:scale(1.06) translateY(-3px);box-shadow:0 10px 28px rgba(163,129,218,.45)}
 .motion-btn:active{transform:scale(.97)}
 
-/* GRAD ANIMATION */
 @keyframes gradShift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
 .anim-grad{background:var(--grad);background-size:200% 100%;animation:gradShift 4s ease infinite}
 
-/* FADE IN */
+
+/* =============================================================
+   20. Fade-In Animation
+   ============================================================= */
+
 .fi{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
 .fi.in{opacity:1;transform:translateY(0)}
 
-/* FOOTER */
+
+/* =============================================================
+   21. Footer
+   ============================================================= */
+
 .footer{background:var(--ink);color:rgba(255,255,255,.35);
   text-align:center;padding:3rem 2rem;font-size:.8rem;line-height:1.9}
 .footer strong{color:rgba(255,255,255,.75)}
 
-@media(max-width:768px){
-  .dodont,.persona-cols,.sp-examples,.pillar-grid{grid-template-columns:1fr}
-  .g2{grid-template-columns:1fr}
-  .font-name-lg{font-size:2rem}
+
+/* =============================================================
+   22. Responsive Overrides
+   ============================================================= */
+
+/* Tablet: 768px and below */
+@media (max-width: 768px) {
+
+  .g2,
+  .g3,
+  .dodont,
+  .persona-cols,
+  .sp-examples,
+  .pillar-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .fi[style*="grid-template-columns:repeat(4"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .topnav-inner {
+    padding: 0 1rem;
+    overflow-x: auto;
+    justify-content: flex-start;
+  }
+
+  .nav-item {
+    white-space: nowrap;
+    font-size: .6rem;
+    padding: .75rem .75rem;
+  }
+
+  .sec { padding: 3rem 0; }
+  .wrap { padding: 0 1.25rem; }
+  .cover { padding: 3rem 1.25rem; }
+  .cover-title { font-size: clamp(2rem, 10vw, 3.5rem); }
+  .cover-meta { flex-direction: column; gap: .75rem; align-items: center; }
+  .sec-title { font-size: clamp(1.5rem, 6vw, 2rem); }
+  .font-name-lg { font-size: 2rem; }
+  .type-row { grid-template-columns: 80px 1fr; }
+  .logo-grid { grid-template-columns: repeat(2, 1fr); }
+  .logo-preview { height: 160px; }
+  .logo-preview img { width: 140px; height: 80px; }
+  .tbl-wrap, .card[style*="overflow:hidden"] { overflow-x: auto; }
+  .tbl { min-width: 480px; }
+  .swatch-row { grid-template-columns: repeat(3, 1fr); }
+  .sp-bar-desc { display: none; }
+  .social-card { padding: 1.25rem; }
+  .pillar-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* Mobile: 480px and below */
+@media (max-width: 480px) {
+
+  .g2,
+  .g3,
+  .fi[style*="grid-template-columns:repeat(4"],
+  .fi[style*="grid-template-columns:repeat(2"],
+  .logo-grid,
+  .pillar-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .wrap { padding: 0 1rem; }
+  .sec { padding: 2.5rem 0; }
+  .card { padding: 1.25rem; }
+  .cover { padding: 2.5rem 1rem; min-height: auto; }
+  .cover-title { font-size: clamp(1.75rem, 12vw, 3rem); line-height: 1.1; }
+  .cover-sub { font-size: .875rem; }
+  .cover-logo { max-width: 220px; }
+
+  .nav-item {
+    font-size: .55rem;
+    padding: .65rem .5rem;
+    gap: .2rem;
+  }
+  .nav-num { display: none; }
+
+  .sec-title { font-size: clamp(1.4rem, 8vw, 1.75rem); }
+  .sec-desc { font-size: .9rem; }
+  .card-title { font-size: .9rem; }
+  .card-body { font-size: .82rem; }
+  .swatch-row { grid-template-columns: repeat(2, 1fr); }
+  .logo-grid { grid-template-columns: 1fr; }
+  .logo-preview { height: 200px; }
+  .logo-preview img { width: 180px; height: 120px; }
+  .font-header { padding: 1.25rem; }
+  .type-row { display: block; padding: .75rem 0; }
+  .type-label { font-size: .65rem; margin-bottom: .35rem; color: var(--mid); }
+  .do-box, .dont-box { padding: 1rem; }
+  .tbl { font-size: .72rem; min-width: 400px; }
+  .tbl th, .tbl td { padding: .6rem .75rem; }
+  .persona { border-radius: 12px; }
+  .persona-body { padding: 1rem; }
+  .motion-btn { width: 100%; }
+  .sp-scale-grid { grid-template-columns: 64px 1fr !important; }
+  .social-icon { font-size: 1.5rem; }
+  .pillar-num { font-size: 2rem; }
+  .tbl td:nth-child(3) { min-width: 160px; }
+}
+
+
+/* =============================================================
+   Font: Pikimisa Regular (embedded asset)
+   ============================================================= */
+
 @font-face {
   font-family: 'Pikimisa Regular';
   src: url('assets/fonts/PikimisaRegular.ttf') format('truetype'),
