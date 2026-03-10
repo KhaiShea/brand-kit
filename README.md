@@ -40,7 +40,7 @@ The official brand kit for **UniQ Te Herenga Waka**, the LGBTQIA+ student organi
 The brand kit is a single-page static site. Clone the repo and open `index.html` in any browser, or serve it with any static host.
 
 ```bash
-git clone https://github.com/[org]/brand-kit.git
+git clone https://github.com/uniqthw/brand-kit.git
 cd brand-kit
 # Open index.html in your browser, or use a local server:
 npx serve .
