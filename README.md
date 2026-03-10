@@ -1,10 +1,10 @@
-# UniQ Te Herenga Waka — Brand Identity System
+# UniQ Te Herenga Waka - Brand Identity System
 
 The official brand kit for **UniQ Te Herenga Waka**, the LGBTQIA+ student organisation at Victoria University of Wellington, Aotearoa New Zealand.
 
 ## Live Site
 
-[brand.uniqthw.org.nz](https://uniqthw.github.io/brand-kit/) *(update once deployed)*
+[brand.uniqthw.org.nz](https://uniqthw.github.io/brand-kit/)
 
 ## Contents
 
