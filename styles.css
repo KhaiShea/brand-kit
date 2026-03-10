@@ -1,11 +1,11 @@
 /**
- * UniQ Te Herenga Waka — Brand Identity System
+ * UniQ Te Herenga Waka - Brand Identity System
  * Stylesheet: styles.css
  *
  * Author:      UniQ Design Team
  * Version:     1.0.0
- * Repository:  Private — UniQ Committee access only
- * Licence:     © Copyright Khai Dye-Brinkman and The Queer Students Association of Te Herenga Waka Victoria University of Wellington Incorporated, 2025. All Rights Reserved.
+ * Repository:  Private - UniQ Committee access only
+ * Licence:     © Copyright Khai Dye-Brinkman and The Queer Students Association of Te Herenga Waka Victoria University of Wellington Incorporated, 2026. All Rights Reserved.
  *
  * Table of Contents
  * -----------------
@@ -263,7 +263,9 @@ body{font-family:'Lexend Deca',sans-serif;background:var(--off);color:var(--ink)
 }
 @font-face {
   font-family: 'Pikimisa Regular';
-  src: url('assets/fonts/PikimisaRegular.ttf') format('truetype');
+  src: url('assets/fonts/PikimisaRegular.ttf') format('truetype'),
+       url('assets/fonts/Pikimisa-Regular.ttf') format('truetype'),
+       url('assets/fonts/Piximisa.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
