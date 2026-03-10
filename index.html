@@ -1,0 +1,1411 @@
+<!--
+  UniQ Te Herenga Waka - Brand Identity System
+  index.html
+
+  Author:      UniQ Design Team
+  Version:     1.0.0
+  Repository:  Private - UniQ Committee access only
+  Licence:     © Copyright Khai Dye-Brinkman and The Queer Students Association of Te Herenga Waka Victoria University of Wellington Incorporated, 2026. All Rights Reserved.
+
+  This file is the entry point for the brand kit.
+  Styles live in styles.css, scripts in main.js.
+
+  Fonts:
+    - Pikimisa Regular (embedded as base64 @font-face in styles.css)
+    - Lexend Deca      (loaded from Google Fonts)
+
+  Logo assets:
+    - Source SVG files are available in /assets/logos/ in this repository.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Primary Meta -->
+  <title>UniQ Te Herenga Waka — Brand Identity System</title>
+  <meta name="description" content="The official brand identity system for UniQ Te Herenga Waka, the LGBTQIA+ student organisation at Victoria University of Wellington.">
+  <meta name="author" content="UniQ Design Team">
+  <meta name="version" content="1.0.0">
+
+  <!-- Open Graph (link previews) -->
+  <meta property="og:title" content="UniQ THW — Brand Identity System">
+  <meta property="og:description" content="Official brand guidelines: colours, typography, logos, voice, and usage rules.">
+  <meta property="og:type" content="website">
+
+  <!-- Colour scheme hint for browser chrome -->
+  <meta name="theme-color" content="#a381da">
+
+  <!-- Google Fonts: Lexend Deca (body + UI) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Brand Kit Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- COVER -->
+<div class="cover">
+  <div class="orb a"></div><div class="orb b"></div><div class="orb c"></div>
+  <div class="cover-inner fi">
+    <div class="cover-eyebrow">Advanced Brand Kit - Version 1.0</div>
+    <img class="cover-logo" src="assets/logos/secondary-white.svg" alt="UniQ THW" />
+    <div class="cover-title" style="background:var(--grad);background-size:200% 100%;animation:gradShift 4s ease infinite;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Brand Identity System</div>
+    <div class="cover-sub">Te Herenga Waka · Victoria University of Wellington</div>
+    <div class="cover-meta">
+      <span>Lexend Deca + Pikimisa Regular</span>
+      <span>6-stop Rainbow Gradient</span>
+      <span>8 Logo Variants</span>
+    </div>
+  </div>
+</div>
+<div class="grad-strip"></div>
+
+<!-- NAV -->
+<nav class="topnav">
+  <div class="topnav-inner">
+    <a href="#strategy"      class="nav-item"><span class="nav-num">01</span> Strategy</a>
+    <a href="#logo"          class="nav-item"><span class="nav-num">02</span> Logo</a>
+    <a href="#colour"        class="nav-item"><span class="nav-num">03</span> Colour</a>
+    <a href="#typography"    class="nav-item"><span class="nav-num">04</span> Typography</a>
+    <a href="#spacing"       class="nav-item"><span class="nav-num">05</span> Spacing</a>
+    <a href="#voice"         class="nav-item"><span class="nav-num">06</span> Voice</a>
+    <a href="#audience"      class="nav-item"><span class="nav-num">07</span> Audience</a>
+    <a href="#motion"        class="nav-item"><span class="nav-num">08</span> Motion</a>
+    <a href="#imagery"       class="nav-item"><span class="nav-num">09</span> Imagery</a>
+    <a href="#social"        class="nav-item"><span class="nav-num">10</span> Social</a>
+    <a href="#collateral"    class="nav-item"><span class="nav-num">11</span> Collateral</a>
+    <a href="#digital"       class="nav-item"><span class="nav-num">12</span> Digital</a>
+    <a href="#accessibility" class="nav-item"><span class="nav-num">13</span> Accessibility</a>
+    <a href="#governance"    class="nav-item"><span class="nav-num">14</span> Governance</a>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ========== 01 STRATEGY ========== -->
+<section id="strategy" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">01</div>
+    <div class="sec-title">Brand Strategy</div>
+    <div class="sec-desc">The foundation: why UniQ exists, what it stands for, and the principles guiding every creative decision.</div>
+  </div>
+
+  <!-- Row 1: Mission / Vision / Values / Tagline -->
+  <div class="fi" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem">
+    <div class="card" style="border-top:3px solid #df7d7d">
+      <div class="card-kicker">Mission</div>
+      <div class="card-title">Why We Exist</div>
+      <div class="card-body">To create an inclusive, safe, and empowering community for LGBTQIA+ students and allies at Te Herenga Waka, Victoria University of Wellington, where every person belongs.</div>
+    </div>
+    <div class="card" style="border-top:3px solid #efc26b">
+      <div class="card-kicker">Vision</div>
+      <div class="card-title">Where We Are Going</div>
+      <div class="card-body">A university campus where takatapui and queer students thrive, connect without barriers, and leave feeling more themselves than when they arrived, with UniQ as the heart of that experience.</div>
+    </div>
+    <div class="card" style="border-top:3px solid #90ce76">
+      <div class="card-kicker">Values</div>
+      <div class="card-title">What We Stand For</div>
+      <div class="card-body">Transparency, Reliability, Consistency, Responsibility. These are the four core principles UniQ brings to everything it does, from events to advocacy to community care.</div>
+    </div>
+    <div class="card" style="border-top:3px solid #93b8cb">
+      <div class="card-kicker">Tagline</div>
+      <div class="card-title">Unapologetically You</div>
+      <div class="card-body">Short, inclusive, action-oriented. Flexes to context: "Be Unapologetically You" for campaigns, "Unapologetically UniQ" for internal culture.</div>
+    </div>
+  </div>
+
+  <!-- Row 2: Brand Story / Positioning -->
+  <div class="fi" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-top:1.25rem">
+    <div class="card" style="border-top:3px solid #a381da">
+      <div class="card-kicker">Brand Story</div>
+      <div class="card-title">Made With Aroha</div>
+      <div class="card-body">UniQ is a community group providing queer students a place to belong. Every design decision, every word, every event reflects genuine care for the people in the room.</div>
+    </div>
+    <div class="card" style="border-top:3px solid #cd9bc6">
+      <div class="card-kicker">Positioning</div>
+      <div class="card-title">Where UniQ Sits</div>
+      <div class="card-body">Warm and activist. Neither corporate nor chaotic. The brand should feel like it was made by and for queer students, not produced by a marketing department.</div>
+    </div>
+  </div>
+
+  <!-- Core Values -->
+  <div class="fi" style="margin-top:2.5rem">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Core Values</div>
+    <div class="fi" style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem">
+      <div class="card" style="border-top:3px solid #df7d7d"><div style="font-size:1.75rem;margin-bottom:.75rem">🌈</div>
+        <div class="card-title">Inclusion</div>
+        <div class="card-body">Every LGBTQIA+ identity is valid and celebrated. We make space intentionally, especially for those most marginalised.</div>
+        <span class="pill p-lav">Non-negotiable</span>
+      </div>
+      <div class="card" style="border-top:3px solid #efc26b"><div style="font-size:1.75rem;margin-bottom:.75rem">🔥</div>
+        <div class="card-title">Authenticity</div>
+        <div class="card-body">We show up as we are. Imperfect, evolving, joyful. Our brand reflects real people, not a polished corporate persona.</div>
+        <span class="pill p-peach">Core</span>
+      </div>
+      <div class="card" style="border-top:3px solid #90ce76"><div style="font-size:1.75rem;margin-bottom:.75rem">✊</div>
+        <div class="card-title">Advocacy</div>
+        <div class="card-body">We do not just celebrate; we fight. UniQ actively advocates for queer rights within university structures and beyond.</div>
+        <span class="pill p-mint">Active</span>
+      </div>
+      <div class="card" style="border-top:3px solid #93b8cb"><div style="font-size:1.75rem;margin-bottom:.75rem">💛</div>
+        <div class="card-title">Community</div>
+        <div class="card-body">Connection over content. Everything we do is designed to bring people together, reduce isolation, and foster lasting friendships.</div>
+        <span class="pill p-sky">Foundation</span>
+      </div>
+      <div class="card" style="border-top:3px solid #a381da"><div style="font-size:1.75rem;margin-bottom:.75rem">🌱</div>
+        <div class="card-title">Growth</div>
+        <div class="card-body">We learn, evolve, and listen. Our language, practices, and positions improve as we grow alongside our community.</div>
+        <span class="pill p-sky">Ongoing</span>
+      </div>
+      <div class="card" style="border-top:3px solid #cd9bc6"><div style="font-size:1.75rem;margin-bottom:.75rem">🎉</div>
+        <div class="card-title">Joy</div>
+        <div class="card-body">Being queer is something to celebrate. We balance serious advocacy with genuine fun, warmth, and playfulness.</div>
+        <span class="pill p-blush">Essential</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 02 LOGO ========== -->
+<section id="logo" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">02</div>
+    <div class="sec-title">Logo System</div>
+    <div class="sec-desc">Eight approved logo variants sourced directly from brand SVG assets. Each has a specific context and clear usage rules.</div>
+  </div>
+  <div class="logo-grid fi">
+    <div class="logo-card">
+      <div class="logo-preview on-white"><img src="assets/logos/primary-coloured.svg" alt="Primary Coloured"/></div>
+      <div class="logo-meta-panel">
+        <div class="logo-meta-name">Primary: Coloured</div>
+        <div class="logo-meta-desc">Default logo. Full wordmark with Te Herenga Waka subtitle and THW badge. Use on white or very light backgrounds.</div>
+        <span class="badge badge-do">Default Use</span>
+      </div>
+    </div>
+    <div class="logo-card">
+      <div class="logo-preview on-white"><img src="assets/logos/primary-bw.svg" alt="Primary BW"/></div>
+      <div class="logo-meta-panel">
+        <div class="logo-meta-name">Primary: Black and White</div>
+        <div class="logo-meta-desc">Single-colour version for embroidery, stamps, or any context where colour printing is not possible.</div>
+        <span class="badge badge-ctx">Print / Mono</span>
+      </div>
+    </div>
+    <div class="logo-card">
+      <div class="logo-preview on-white"><img src="assets/logos/secondary-coloured.svg" alt="Secondary Coloured"/></div>
+      <div class="logo-meta-panel">
+        <div class="logo-meta-name">Secondary: Coloured (Full)</div>
+        <div class="logo-meta-desc">Horizontal lockup including Te Herenga Waka. For formal university documents and presentations.</div>
+        <span class="badge badge-ctx">Formal / Academic</span>
+      </div>
+    </div>
+    <div class="logo-card">
+      <div class="logo-preview on-grad"><img src="assets/logos/secondary-white.svg" alt="Secondary White"/></div>
+      <div class="logo-meta-panel">
+        <div class="logo-meta-name">Secondary: White (Reversed)</div>
+        <div class="logo-meta-desc">White knockout for use on the rainbow gradient, dark backgrounds, or any coloured backdrop.</div>
+        <span class="badge badge-do">On Gradient / Dark</span>
+      </div>
+    </div>
+    <div class="logo-card">
+      <div class="logo-preview on-white"><img src="assets/logos/secondary-coloured-no-thw.svg" alt="Secondary no THW"/></div>
+      <div class="logo-meta-panel">
+        <div class="logo-meta-name">Secondary: No THW</div>
+        <div class="logo-meta-desc">Wordmark without the university suffix. For national events, external media, and non-university contexts.</div>
+        <span class="badge badge-ctx">External Comms</span>
+      </div>
+    </div>
+    <div class="logo-card">
+      <div class="logo-preview on-white"><img src="assets/logos/icon-coloured.svg" alt="Icon Coloured"/></div>
+      <div class="logo-meta-panel">
+        <div class="logo-meta-name">Icon: Coloured</div>
+        <div class="logo-meta-desc">Q-icon mark only. For social media avatars, app icons, favicons, and space-restricted contexts.</div>
+        <span class="badge badge-do">Avatar / Icon</span>
+      </div>
+    </div>
+    <div class="logo-card">
+      <div class="logo-preview on-white"><img src="assets/logos/icon-bw.svg" alt="Icon BW"/></div>
+      <div class="logo-meta-panel">
+        <div class="logo-meta-name">Icon: Black and White</div>
+        <div class="logo-meta-desc">Monochrome icon for single-colour applications, print merch, and accessibility-first contexts.</div>
+        <span class="badge badge-ctx">Mono Print</span>
+      </div>
+    </div>
+      </div>
+  <div style="margin-top:2rem" class="fi">
+    <div class="dodont">
+      <div class="do-box"><div class="dd-label">Do</div>
+        <ul class="rules">
+          <li>Use coloured version on white or off-white backgrounds</li>
+          <li>Use white reversed version on the rainbow gradient</li>
+          <li>Use BW version for embroidery, stamps, single-colour print</li>
+          <li>Scale proportionally (never distort aspect ratio)</li>
+          <li>Use icon-only for social avatars and favicons</li>
+          <li>Always source files from the Canva brand kit</li>
+          <li>Maintain clear space equal to the star-icon height on all sides of every logo</li>
+        </ul>
+      </div>
+      <div class="dont-box"><div class="dd-label">Do Not</div>
+        <ul class="rules">
+          <li>Stretch, squish, skew, or rotate the logo</li>
+          <li>Recolour the gradient or change individual letter colours</li>
+          <li>Add drop shadows, glows, or outlines to the logo</li>
+          <li>Place on busy photographic backgrounds without a container</li>
+          <li>Use below 32px height on screen or 20mm in print</li>
+          <li>Recreate the logo in a different typeface</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div style="margin-top:2rem" class="fi">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Minimum Sizes and File Formats</div>
+    <div class="g3">
+      <div class="card"><div class="card-kicker">Digital</div><div class="card-title">Minimum 32px height</div>
+        <div class="card-body">SVG: preferred for all screen use (scalable, sharp).<br>PNG 2x: for contexts where SVG is not supported (Slack, email).<br>WebP: for performance-critical web contexts.</div>
+      </div>
+      <div class="card"><div class="card-kicker">Print</div><div class="card-title">Minimum 20mm height</div>
+        <div class="card-body">EPS / SVG: for professional print suppliers.<br>PDF (vector): for office print and documents.<br>PNG 300dpi: for press-ready raster needs.</div>
+      </div>
+      <div class="card"><div class="card-kicker">Merchandise</div><div class="card-title">BW or spot colour</div>
+        <div class="card-body">Embroidery: use BW or single-colour version.<br>Screen print: confirm colours match Pantone equivalents.<br>DTG: coloured version works well on white fabric.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 03 COLOUR ========== -->
+<section id="colour" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">03</div>
+    <div class="sec-title">Colour System</div>
+    <div class="sec-desc">All colours extracted directly from the brand SVG assets. The rainbow gradient is the hero. Individual stops serve as accent and functional colours.</div>
+  </div>
+
+  <div class="fi" style="margin-bottom:1.75rem">
+    <div style="font-size:.8rem;font-weight:700;margin-bottom:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mid)">Primary Gradient</div>
+    <div class="grad-swatch">
+      <div class="grad-chip anim-grad"></div>
+      <div class="grad-body">
+        <div style="font-size:.85rem;font-weight:700;margin-bottom:.25rem">UniQ Rainbow Gradient</div>
+        <div style="font-size:.75rem;color:var(--mid)">linear-gradient(90deg, #df7d7d 0%, #efc26b 21%, #90ce76 40%, #93b8cb 62%, #a381da 80%, #cd9bc6 100%)</div>
+        <div style="font-size:.75rem;color:var(--mid);margin-top:.35rem">Hero identity asset. Used on logo, gradient bars, hero backgrounds, and accent elements. This IS the brand.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="fi">
+    <div style="font-size:.8rem;font-weight:700;margin-bottom:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mid)">Individual Gradient Stops</div>
+    <div class="swatches">
+      <div class="swatch"><div class="swatch-chip" style="background:#df7d7d;color:#1c1c2e">#df7d7d</div><div class="swatch-info"><div class="swatch-name">Coral</div><div class="swatch-hex">#df7d7d · RGB(223,125,125)</div><div class="swatch-role">0% stop · Warmth, energy. Alerts, CTAs, bold accents.</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#efc26b;color:#1c1c2e">#efc26b</div><div class="swatch-info"><div class="swatch-name">Peach / Gold</div><div class="swatch-hex">#efc26b · RGB(239,194,107)</div><div class="swatch-role">21% stop · Optimism, celebration. Highlights, warm tints.</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#90ce76;color:#1c1c2e">#90ce76</div><div class="swatch-info"><div class="swatch-name">Mint Green</div><div class="swatch-hex">#90ce76 · RGB(144,206,118)</div><div class="swatch-role">40% stop · Growth, safety. Success states, positive messages.</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#93b8cb;color:#1c1c2e">#93b8cb</div><div class="swatch-info"><div class="swatch-name">Sky Blue</div><div class="swatch-hex">#93b8cb · RGB(147,184,203)</div><div class="swatch-role">62% stop · Calm, clarity. Info states, quiet sections.</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#a381da;color:#1c1c2e">#a381da</div><div class="swatch-info"><div class="swatch-name">Lavender</div><div class="swatch-hex">#a381da · RGB(163,129,218)</div><div class="swatch-role">80% stop · <strong>Primary brand accent (default).</strong> Headers, primary buttons, key UI. The most-used single brand colour.</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#cd9bc6;color:#1c1c2e">#cd9bc6</div><div class="swatch-info"><div class="swatch-name">Blush Pink</div><div class="swatch-hex">#cd9bc6 · RGB(205,155,198)</div><div class="swatch-role">100% stop · Softness, playfulness. Subtle bg tints, secondary accents.</div></div></div>
+    </div>
+  </div>
+
+  <div class="fi" style="margin-top:2rem">
+    <div style="font-size:.8rem;font-weight:700;margin-bottom:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--mid)">Functional / Neutral Colours</div>
+    <div class="swatches">
+      <div class="swatch"><div class="swatch-chip" style="background:#1c1c2e;color:#ffffff">#1c1c2e</div><div class="swatch-info"><div class="swatch-name">Ink</div><div class="swatch-hex">#1c1c2e</div><div class="swatch-role">Primary text. Warm near-black (never pure #000).</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#5a5a72;color:#ffffff">#5a5a72</div><div class="swatch-info"><div class="swatch-name">Mid Grey</div><div class="swatch-hex">#5a5a72</div><div class="swatch-role">Secondary text, captions, labels, metadata.</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#f9f9fb;color:#1c1c2e">#f9f9fb</div><div class="swatch-info"><div class="swatch-name">Off-White</div><div class="swatch-hex">#f9f9fb</div><div class="swatch-role">Page backgrounds. Crisp but not clinical.</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#fff;color:#1c1c2e;border:1px solid #e4e4ef">#ffffff</div><div class="swatch-info"><div class="swatch-name">White</div><div class="swatch-hex">#ffffff</div><div class="swatch-role">Cards, reversed text on gradients, icon fills.</div></div></div>
+      <div class="swatch"><div class="swatch-chip" style="background:#e4e4ef;color:#1c1c2e">#e4e4ef</div><div class="swatch-info"><div class="swatch-name">Border</div><div class="swatch-hex">#e4e4ef</div><div class="swatch-role">Dividers, card borders. Never for text.</div></div></div>
+    </div>
+  </div>
+
+  <!-- COLOUR USAGE RULES -->
+  <div style="margin-top:2rem" class="fi">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Colour Usage Rules</div>
+    <div class="dodont">
+      <div class="do-box"><div class="dd-label">Do</div>
+        <ul class="rules">
+          <li>Use the full rainbow gradient as a feature element: headers, backgrounds, borders</li>
+          <li>Use individual colours for tinted chips, tags, and section accents</li>
+          <li>Pair any gradient stop with white text (check contrast first)</li>
+          <li>Use Lavender (#a381da) as the single most-used standalone brand colour</li>
+          <li>Keep backgrounds light (white, off-white) to let the gradient stand out</li>
+        </ul>
+      </div>
+      <div class="dont-box"><div class="dd-label">Do Not</div>
+        <ul class="rules">
+          <li>Place light colours (#efc26b, #90ce76) over white, as contrast fails accessibility</li>
+          <li>Use all 6 gradient colours simultaneously as separate competing elements</li>
+          <li>Introduce non-brand colours without explicit sign-off from the committee</li>
+          <li>Use the gradient on every element, as it loses impact</li>
+          <li>Place #cd9bc6 over white for body text (fails WCAG AA)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- COLOUR CONTRAST REFERENCE -->
+  <div style="margin-top:2rem" class="fi">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:.5rem">Colour Contrast Reference (WCAG 2.1)</div>
+    <div style="font-size:.82rem;color:var(--mid);margin-bottom:1.25rem">All ratios calculated to WCAG 2.1 specification. AA Normal requires 4.5:1, AA Large (18px+ or 14px bold) requires 3:1, AAA requires 7:1.</div>
+
+    <div style="font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem"><span style="width:12px;height:3px;background:#1c1c2e;border-radius:2px;display:inline-block"></span>Ink text on brand backgrounds</div>
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:1.25rem">
+      <table class="tbl" style="font-size:.8rem">
+        <thead><tr>
+          <th style="width:48px">Preview</th>
+          <th>Foreground</th>
+          <th>Background</th>
+          <th>Ratio</th>
+          <th>AA Normal</th>
+          <th>AA Large</th>
+          <th>AAA</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#ffffff;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1c1c2e">Aa</div></td>
+            <td>#1c1c2e Ink</td><td>#ffffff White</td><td style="font-weight:700">16.7:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#f9f9fb;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1c1c2e">Aa</div></td>
+            <td>#1c1c2e Ink</td><td>#f9f9fb Off-White</td><td style="font-weight:700">15.9:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#df7d7d;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1c1c2e">Aa</div></td>
+            <td>#1c1c2e Ink</td><td>#df7d7d Coral</td><td style="font-weight:700">5.9:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#efc26b;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1c1c2e">Aa</div></td>
+            <td>#1c1c2e Ink</td><td>#efc26b Peach</td><td style="font-weight:700">10.0:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#90ce76;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1c1c2e">Aa</div></td>
+            <td>#1c1c2e Ink</td><td>#90ce76 Mint</td><td style="font-weight:700">9.0:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#93b8cb;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1c1c2e">Aa</div></td>
+            <td>#1c1c2e Ink</td><td>#93b8cb Sky</td><td style="font-weight:700">7.9:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#a381da;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1c1c2e">Aa</div></td>
+            <td>#1c1c2e Ink</td><td>#a381da Lavender</td><td style="font-weight:700">5.3:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#cd9bc6;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#1c1c2e">Aa</div></td>
+            <td>#1c1c2e Ink</td><td>#cd9bc6 Blush</td><td style="font-weight:700">7.3:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem"><span style="width:12px;height:3px;background:#ffffff;border:1px solid var(--border);border-radius:2px;display:inline-block"></span>White text on brand backgrounds</div>
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:1.25rem">
+      <table class="tbl" style="font-size:.8rem">
+        <thead><tr>
+          <th style="width:48px">Preview</th>
+          <th>Foreground</th>
+          <th>Background</th>
+          <th>Ratio</th>
+          <th>AA Normal</th>
+          <th>AA Large</th>
+          <th>AAA</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#1c1c2e;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#fff">Aa</div></td>
+            <td>#ffffff White</td><td>#1c1c2e Ink</td><td style="font-weight:700">16.7:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#5a5a72;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#fff">Aa</div></td>
+            <td>#ffffff White</td><td>#5a5a72 Mid Grey</td><td style="font-weight:700">6.7:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#df7d7d;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#fff">Aa</div></td>
+            <td>#ffffff White</td><td>#df7d7d Coral</td><td style="font-weight:700">2.9:1</td>
+            <td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#efc26b;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#fff">Aa</div></td>
+            <td>#ffffff White</td><td>#efc26b Peach</td><td style="font-weight:700">1.7:1</td>
+            <td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#90ce76;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#fff">Aa</div></td>
+            <td>#ffffff White</td><td>#90ce76 Mint</td><td style="font-weight:700">1.9:1</td>
+            <td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#93b8cb;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#fff">Aa</div></td>
+            <td>#ffffff White</td><td>#93b8cb Sky</td><td style="font-weight:700">2.1:1</td>
+            <td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#a381da;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#fff">Aa</div></td>
+            <td>#ffffff White</td><td>#a381da Lavender</td><td style="font-weight:700">3.1:1</td>
+            <td class="no">&#10007; Fail</td><td class="yes">&#10003; Pass</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#cd9bc6;display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#fff">Aa</div></td>
+            <td>#ffffff White</td><td>#cd9bc6 Blush</td><td style="font-weight:700">2.3:1</td>
+            <td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td><td class="no">&#10007; Fail</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem"><span style="width:12px;height:3px;background:var(--mid);border-radius:2px;display:inline-block"></span>Supporting colour combinations</div>
+    <div class="card" style="padding:0;overflow:hidden;margin-bottom:1.25rem">
+      <table class="tbl" style="font-size:.8rem">
+        <thead><tr>
+          <th style="width:48px">Preview</th>
+          <th>Foreground</th>
+          <th>Background</th>
+          <th>Ratio</th>
+          <th>AA Normal</th>
+          <th>AA Large</th>
+          <th>AAA</th>
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#ffffff;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#5a5a72">Aa</div></td>
+            <td>#5a5a72 Mid Grey</td><td>#ffffff White</td><td style="font-weight:700">6.7:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="no">&#10007; Fail</td>
+          </tr>
+          <tr>
+            <td><div style="width:36px;height:24px;border-radius:4px;background:#f9f9fb;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:700;color:#5a5a72">Aa</div></td>
+            <td>#5a5a72 Mid Grey</td><td>#f9f9fb Off-White</td><td style="font-weight:700">6.4:1</td>
+            <td class="yes">&#10003; Pass</td><td class="yes">&#10003; Pass</td><td class="no">&#10007; Fail</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="background:#fff8ee;border:1px solid var(--peach);border-radius:8px;padding:1rem;font-size:.8rem;color:var(--ink)">
+      <strong>Key takeaway:</strong> Always use Ink (#1c1c2e) as foreground text on any brand colour background. It passes AA at all sizes across every stop. Never use white text on Coral, Peach, Mint, Sky, or Blush at any size. White text on Lavender only passes AA Large (18px+). Verify custom combinations at <strong>webaim.org/resources/contrastchecker</strong>.
+    </div>
+  </div>
+
+  <!-- COLOUR EXAMPLES -->
+  <div style="margin-top:2rem" class="fi">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Colour Application Examples</div>
+    <div class="colour-examples">
+      <div class="colour-ex">
+        <div class="colour-ex-preview" style="background:var(--grad);color:#fff">Gradient Header</div>
+        <div class="colour-ex-label">Rainbow gradient as full-bleed hero background with white text. The most impactful single use of the brand palette.</div>
+      </div>
+      <div class="colour-ex">
+        <div class="colour-ex-preview" style="background:#f0ebff;color:#1c1c2e">Lavender Tint</div>
+        <div class="colour-ex-label">10% lavender tint background with dark lavender text. Safe for informational callouts and info states.</div>
+      </div>
+      <div class="colour-ex">
+        <div class="colour-ex-preview" style="background:#1c1c2e;color:#a381da">Dark + Lavender</div>
+        <div class="colour-ex-label">Ink background with lavender accent text. Hero sections, dark mode panels, event posters.</div>
+      </div>
+      <div class="colour-ex">
+        <div class="colour-ex-preview" style="background:#fff;border:2px solid var(--lavender);color:#a381da">White + Border</div>
+        <div class="colour-ex-label">White card with lavender border: secondary buttons, selected states, active filters.</div>
+      </div>
+      <div class="colour-ex">
+        <div class="colour-ex-preview" style="background:#e8f7e0;color:#1c1c2e">Mint Tint</div>
+        <div class="colour-ex-label">Mint green tint for success states, positive confirmations, and "approved" indicators.</div>
+      </div>
+      <div class="colour-ex">
+        <div class="colour-ex-preview" style="background:#1c1c2e">
+          <span style="background:var(--grad);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:1.5rem;font-weight:700">Gradient Text</span>
+        </div>
+        <div class="colour-ex-label">Gradient applied to large display text on dark background. Use for Pikimisa headlines only.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 04 TYPOGRAPHY ========== -->
+<section id="typography" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">04</div>
+    <div class="sec-title">Typography</div>
+    <div class="sec-desc">Two typefaces from the Canva brand kit. Pikimisa Regular for display and character. Lexend Deca for body, UI, and all functional text.</div>
+  </div>
+
+  <div class="fi" style="display:flex;flex-direction:column;gap:1.25rem">
+
+    <!-- PIKIMISA -->
+    <div class="font-block">
+      <div class="font-header">
+        <div class="card-kicker">Brand Font 1 - Display and Character</div>
+        <div style="font-family:'Pikimisa Regular','Lexend Deca',sans-serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:700;line-height:1.2;padding-bottom:.2rem;color:var(--ink);margin-bottom:.25rem">Pikimisa Regular</div>
+        <div class="font-alphabet" style="color:var(--mid);font-family:'Pikimisa Regular','Lexend Deca',sans-serif">
+          Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br>
+          0 1 2 3 4 5 6 7 8 9
+        </div>
+
+      </div>
+      <div class="type-scale">
+        <div class="type-row">
+          <span class="type-label">Display / H1</span>
+          <span class="type-sample" style="font-family:'Pikimisa Regular','Lexend Deca',sans-serif;font-size:1.75rem;line-height:1.1;color:var(--ink)">Unapologetically You</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">Heading / H2</span>
+          <span class="type-sample" style="font-family:'Pikimisa Regular','Lexend Deca',sans-serif;font-size:1.3rem;line-height:1.2;color:var(--ink)">Join Our Community</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">Subhead</span>
+          <span class="type-sample" style="font-family:'Pikimisa Regular','Lexend Deca',sans-serif;font-size:1.1rem;color:var(--ink)">UniQ Te Herenga Waka</span>
+        </div>
+      </div>
+      <div class="font-meta-panel">
+        <div class="meta-row">
+          <div class="meta-item"><div class="meta-label">Style</div><div class="meta-val">Regular (single weight)</div></div>
+          <div class="meta-item"><div class="meta-label">Use for</div><div class="meta-val">Headlines, posters, hero text, campaign titles</div></div>
+          <div class="meta-item"><div class="meta-label">Source</div><div class="meta-val">Canva Brand Kit + Google Drive</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LEXEND DECA -->
+    <div class="font-block">
+      <div class="font-header">
+        <div class="card-kicker">Brand Font 2 - Body, UI and Functional</div>
+        <div style="font-family:'Lexend Deca',sans-serif;font-size:clamp(2.5rem,6vw,5rem);font-weight:700;line-height:1;color:var(--ink);margin-bottom:.1rem">Lexend Deca</div>
+        <div class="font-alphabet" style="color:var(--mid);font-family:'Lexend Deca',sans-serif">
+          Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj Kk Ll Mm Nn Oo Pp Qq Rr Ss Tt Uu Vv Ww Xx Yy Zz<br>
+          0 1 2 3 4 5 6 7 8 9
+        </div>
+
+      </div>
+      <div class="type-scale">
+        <div class="type-row">
+          <span class="type-label">H3 / 28px</span>
+          <span class="type-sample" style="font-size:1.3rem;font-weight:700;font-family:'Lexend Deca',sans-serif">Upcoming Events</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">Body / 16px</span>
+          <span class="type-sample" style="font-size:.9rem;font-weight:400;font-family:'Lexend Deca',sans-serif">UniQ THW welcomes all LGBTQIA+ students and allies at Victoria University of Wellington.</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">UI / 14px</span>
+          <span class="type-sample" style="font-size:.8rem;font-weight:500;color:var(--mid);font-family:'Lexend Deca',sans-serif">Friday 28 February - Rainbow Room (SU209) - 12pm-3pm</span>
+        </div>
+        <div class="type-row">
+          <span class="type-label">Label / 11px</span>
+          <span class="type-sample" style="font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--mid);font-family:'Lexend Deca',sans-serif">SECTION - DATE - SPONSOR</span>
+        </div>
+      </div>
+      <div class="font-meta-panel">
+        <div class="meta-row">
+          <div class="meta-item"><div class="meta-label">Weights</div><div class="meta-val">300 - 400 - 500 - 600 - 700</div></div>
+          <div class="meta-item"><div class="meta-label">Use for</div><div class="meta-val">All body copy, UI, captions, labels, nav</div></div>
+          <div class="meta-item"><div class="meta-label">Source</div><div class="meta-val">Canva Brand Kit + Google Drive</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:1.5rem" class="fi">
+    <div class="dodont">
+      <div class="do-box"><div class="dd-label">Do</div>
+        <ul class="rules">
+          <li>Use Pikimisa for all primary display headings and campaign titles</li>
+          <li>Use Lexend Deca for every other text: body, UI, captions, labels</li>
+          <li>Apply the rainbow gradient to Pikimisa display headings on light backgrounds</li>
+          <li>Use Lexend Deca 700 Bold for subheadings and card titles</li>
+          <li>Minimum 16px body text on screen, 12px absolute minimum anywhere</li>
+          <li>Line height: 1.1 for Pikimisa display, 1.65 to 1.75 for Lexend Deca body</li>
+        </ul>
+      </div>
+      <div class="dont-box"><div class="dd-label">Do Not</div>
+        <ul class="rules">
+          <li>Use Pikimisa for body paragraphs. It is a display font only.</li>
+          <li>Introduce any third typeface without committee sign-off</li>
+          <li>Apply gradient text to body copy (readability suffers)</li>
+          <li>Use Lexend Deca weights below 300 on screen</li>
+          <li>Apply letter-spacing modifications to Pikimisa, as it has its own natural spacing</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 05 SPACING & GRID ========== -->
+<section id="spacing" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">05</div>
+    <div class="sec-title">Spacing and Grid</div>
+    <div class="sec-desc">4px base unit. All spacing, padding, and gap values are multiples of 4. Consistent rhythm means professional, polished layouts every time.</div>
+  </div>
+
+  <!-- SPACING SCALE: full-width horizontal bar chart -->
+  <div class="card fi" style="margin-bottom:1.25rem">
+    <div class="card-kicker" style="margin-bottom:1.25rem">Spacing Scale (Base 4px)</div>
+    <div style="display:flex;flex-direction:column;gap:.5rem">
+      <!-- Each row: label | bar | use -->
+      <div style="display:grid;grid-template-columns:90px 1fr 220px;gap:1rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:.72rem;color:var(--mid);font-variant-numeric:tabular-nums;font-weight:600">4px / 1x</div>
+        <div style="background:var(--border);border-radius:3px;height:8px"><div style="width:2%;height:100%;background:var(--lavender);border-radius:3px;opacity:.7"></div></div>
+        <div style="font-size:.8rem;color:var(--mid)">Micro gaps, inline padding</div>
+      </div>
+      <div style="display:grid;grid-template-columns:90px 1fr 220px;gap:1rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:.72rem;color:var(--mid);font-weight:600">8px / 2x</div>
+        <div style="background:var(--border);border-radius:3px;height:8px"><div style="width:4%;height:100%;background:var(--lavender);border-radius:3px;opacity:.7"></div></div>
+        <div style="font-size:.8rem;color:var(--mid)">Tight component spacing</div>
+      </div>
+      <div style="display:grid;grid-template-columns:90px 1fr 220px;gap:1rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:.72rem;color:var(--mid);font-weight:600">12px / 3x</div>
+        <div style="background:var(--border);border-radius:3px;height:8px"><div style="width:7%;height:100%;background:var(--lavender);border-radius:3px;opacity:.7"></div></div>
+        <div style="font-size:.8rem;color:var(--mid)">Tag gaps, badge padding</div>
+      </div>
+      <div style="display:grid;grid-template-columns:90px 1fr 220px;gap:1rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:.72rem;color:var(--mid);font-weight:600">16px / 4x</div>
+        <div style="background:var(--border);border-radius:3px;height:8px"><div style="width:12%;height:100%;background:var(--lavender);border-radius:3px;opacity:.7"></div></div>
+        <div style="font-size:.8rem;color:var(--ink);font-weight:600">Standard component padding <span style="color:var(--mid);font-weight:400">(default)</span></div>
+      </div>
+      <div style="display:grid;grid-template-columns:90px 1fr 220px;gap:1rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:.72rem;color:var(--mid);font-weight:600">24px / 6x</div>
+        <div style="background:var(--border);border-radius:3px;height:8px"><div style="width:22%;height:100%;background:var(--lavender);border-radius:3px;opacity:.7"></div></div>
+        <div style="font-size:.8rem;color:var(--mid)">Card padding, section sub-gaps</div>
+      </div>
+      <div style="display:grid;grid-template-columns:90px 1fr 220px;gap:1rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:.72rem;color:var(--mid);font-weight:600">32px / 8x</div>
+        <div style="background:var(--border);border-radius:3px;height:8px"><div style="width:35%;height:100%;background:var(--lavender);border-radius:3px;opacity:.7"></div></div>
+        <div style="font-size:.8rem;color:var(--mid)">Between content groups</div>
+      </div>
+      <div style="display:grid;grid-template-columns:90px 1fr 220px;gap:1rem;align-items:center;padding:.5rem 0;border-bottom:1px solid var(--border)">
+        <div style="font-size:.72rem;color:var(--mid);font-weight:600">48px / 12x</div>
+        <div style="background:var(--border);border-radius:3px;height:8px"><div style="width:55%;height:100%;background:var(--lavender);border-radius:3px;opacity:.7"></div></div>
+        <div style="font-size:.8rem;color:var(--mid)">Major content block separation</div>
+      </div>
+      <div style="display:grid;grid-template-columns:90px 1fr 220px;gap:1rem;align-items:center;padding:.5rem 0">
+        <div style="font-size:.72rem;color:var(--mid);font-weight:600">80px / 20x</div>
+        <div style="background:var(--border);border-radius:3px;height:8px"><div style="width:90%;height:100%;background:var(--lavender);border-radius:3px;opacity:.7"></div></div>
+        <div style="font-size:.8rem;color:var(--mid)">Section top / bottom padding</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RADIUS + GRID in a 2-col row -->
+  <div class="g2 fi">
+
+    <!-- BORDER RADIUS -->
+    <div class="card">
+      <div class="card-kicker" style="margin-bottom:1.25rem">Border Radius Scale</div>
+      <div style="display:flex;flex-direction:column;gap:.875rem">
+        <div style="display:flex;align-items:center;gap:1rem">
+          <div style="width:40px;height:40px;background:var(--lavender);opacity:.25;border-radius:4px;flex-shrink:0;border:1.5px solid var(--lavender)"></div>
+          <div><div style="font-size:.82rem;font-weight:700">4px</div><div style="font-size:.75rem;color:var(--mid)">Input fields, table cells, code blocks</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem">
+          <div style="width:40px;height:40px;background:var(--lavender);opacity:.25;border-radius:8px;flex-shrink:0;border:1.5px solid var(--lavender)"></div>
+          <div><div style="font-size:.82rem;font-weight:700">8px</div><div style="font-size:.75rem;color:var(--mid)">Badges, tags, small chips</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem">
+          <div style="width:40px;height:40px;background:var(--lavender);opacity:.25;border-radius:12px;flex-shrink:0;border:1.5px solid var(--lavender)"></div>
+          <div><div style="font-size:.82rem;font-weight:700">12px</div><div style="font-size:.75rem;color:var(--mid)">Buttons, image thumbnails</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem">
+          <div style="width:40px;height:40px;background:var(--lavender);opacity:.25;border-radius:16px;flex-shrink:0;border:1.5px solid var(--lavender)"></div>
+          <div><div style="font-size:.82rem;font-weight:700">16px <span style="color:var(--mid);font-weight:400;font-size:.72rem">(default)</span></div><div style="font-size:.75rem;color:var(--mid)">Content cards, modals, panels</div></div>
+        </div>
+        <div style="display:flex;align-items:center;gap:1rem">
+          <div style="width:40px;height:40px;background:var(--lavender);opacity:.25;border-radius:999px;flex-shrink:0;border:1.5px solid var(--lavender)"></div>
+          <div><div style="font-size:.82rem;font-weight:700">999px</div><div style="font-size:.75rem;color:var(--mid)">Primary buttons, nav pills, chips</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GRID + BUTTON DEMO -->
+    <div style="display:flex;flex-direction:column;gap:1.25rem">
+      <div class="card">
+        <div class="card-kicker" style="margin-bottom:1rem">Layout Grid</div>
+        <div style="display:flex;flex-direction:column;gap:.6rem">
+          <div style="display:flex;gap:.5rem">
+            <span style="background:#f0ebff;color:#1c1c2e;font-size:.72rem;font-weight:700;padding:.2rem .6rem;border-radius:4px">Desktop</span>
+            <span style="font-size:.8rem;color:var(--mid)">12 cols, 24px gutters, 1280px max</span>
+          </div>
+          <div style="display:flex;gap:.5rem">
+            <span style="background:#e8f3ff;color:#1c1c2e;font-size:.72rem;font-weight:700;padding:.2rem .6rem;border-radius:4px">Tablet</span>
+            <span style="font-size:.8rem;color:var(--mid)">8 cols, 20px gutters, 24px margins</span>
+          </div>
+          <div style="display:flex;gap:.5rem">
+            <span style="background:#e8f7e0;color:#1c1c2e;font-size:.72rem;font-weight:700;padding:.2rem .6rem;border-radius:4px">Mobile</span>
+            <span style="font-size:.8rem;color:var(--mid)">4 cols, 16px gutters, 16px margins</span>
+          </div>
+        </div>
+        <!-- Mini grid preview -->
+        <div style="display:grid;grid-template-columns:repeat(12,1fr);gap:3px;margin-top:1rem;height:24px">
+          <div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div><div style="background:var(--lavender);opacity:.15;border-radius:2px"></div>
+        </div>
+        <div style="font-size:.68rem;color:var(--mid);margin-top:.4rem">12-column grid at 1280px max width</div>
+      </div>
+
+      <div class="card">
+        <div class="card-kicker" style="margin-bottom:1rem">Button Sizing</div>
+        <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap;margin-bottom:.75rem">
+          <button style="background:var(--lavender);color:#fff;border:none;border-radius:999px;padding:.7rem 1.5rem;font-family:'Lexend Deca',sans-serif;font-size:.875rem;font-weight:700;cursor:default">Primary</button>
+          <button style="background:transparent;color:var(--lavender);border:2px solid var(--lavender);border-radius:999px;padding:.6rem 1.25rem;font-family:'Lexend Deca',sans-serif;font-size:.875rem;font-weight:700;cursor:default">Secondary</button>
+          <button style="background:var(--off);color:var(--mid);border:1px solid var(--border);border-radius:8px;padding:.5rem 1rem;font-family:'Lexend Deca',sans-serif;font-size:.82rem;font-weight:600;cursor:default">Tertiary</button>
+        </div>
+        <div style="font-size:.75rem;color:var(--mid);line-height:1.6">
+          Primary: 999px radius, lavender fill, 12-16px padding<br>
+          Secondary: 999px radius, lavender outline<br>
+          Tertiary: 8px radius, neutral
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- VISUAL EXAMPLES -->
+  <div class="fi" style="margin-top:1.25rem">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Visual Spacing Examples</div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem">
+      <div class="card" style="border-top:3px solid var(--coral)">
+        <div class="card-kicker">Card padding: 24px (6x)</div>
+        <div style="background:var(--off);border:1px solid var(--border);border-radius:12px;padding:24px;margin-top:.75rem">
+          <div style="background:var(--lavender);opacity:.2;border-radius:4px;height:10px;margin-bottom:8px"></div>
+          <div style="background:var(--lavender);opacity:.15;border-radius:4px;height:8px;margin-bottom:8px;width:80%"></div>
+          <div style="background:var(--lavender);opacity:.1;border-radius:4px;height:8px;width:60%"></div>
+          <div style="margin-top:16px;display:flex;gap:8px">
+            <div style="background:var(--lavender);opacity:.4;border-radius:999px;height:28px;width:80px"></div>
+            <div style="background:var(--border);border-radius:999px;height:28px;width:80px"></div>
+          </div>
+        </div>
+        <div style="font-size:.72rem;color:var(--mid);margin-top:.6rem">24px card padding, 8px row gaps, 16px before CTA</div>
+      </div>
+
+      <div class="card" style="border-top:3px solid var(--peach)">
+        <div class="card-kicker">Section gap: 80px (20x)</div>
+        <div style="margin-top:.75rem">
+          <div style="background:var(--off);border:1px dashed var(--border);border-radius:8px;height:36px;display:flex;align-items:center;padding:0 12px;font-size:.72rem;color:var(--mid);font-weight:600">Section A</div>
+          <div style="position:relative;height:48px;display:flex;align-items:center;justify-content:center">
+            <div style="position:absolute;left:50%;top:0;bottom:0;width:1px;background:var(--border)"></div>
+            <div style="background:var(--off);border:1px solid var(--border);border-radius:4px;padding:.2rem .6rem;font-size:.65rem;color:var(--mid);position:relative;z-index:1">80px</div>
+          </div>
+          <div style="background:var(--off);border:1px dashed var(--border);border-radius:8px;height:36px;display:flex;align-items:center;padding:0 12px;font-size:.72rem;color:var(--mid);font-weight:600">Section B</div>
+        </div>
+        <div style="font-size:.72rem;color:var(--mid);margin-top:.6rem">80px separates major page sections, giving each room to breathe</div>
+      </div>
+
+      <div class="card" style="border-top:3px solid var(--mint)">
+        <div class="card-kicker">3-column layout</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:.75rem">
+          <div style="background:var(--lavender);opacity:.12;border-radius:8px;height:56px;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--mid)">4 cols</div>
+          <div style="background:var(--lavender);opacity:.12;border-radius:8px;height:56px;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--mid)">4 cols</div>
+          <div style="background:var(--lavender);opacity:.12;border-radius:8px;height:56px;display:flex;align-items:center;justify-content:center;font-size:.65rem;color:var(--mid)">4 cols</div>
+        </div>
+        <div style="font-size:.72rem;color:var(--mid);margin-top:.6rem">Each column spans 4 of 12 grid columns with 24px gutters between</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 06 VOICE ========== -->
+<section id="voice" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">06</div>
+    <div class="sec-title">Brand Voice and Tone</div>
+    <div class="sec-desc">How UniQ sounds across every platform, from social captions to formal advocacy letters.</div>
+  </div>
+  <div class="fi" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1.25rem;margin-bottom:2rem">
+    <div class="card" style="border-top:3px solid #df7d7d"><div class="card-kicker">Personality</div><div class="card-title">Warm and Welcoming</div><div class="card-body">Feels like a message from a friend, not a university department. Inclusive language, no jargon, no talking down.</div></div>
+    <div class="card" style="border-top:3px solid #efc26b"><div class="card-kicker">Personality</div><div class="card-title">Playful and Real</div><div class="card-body">Comfortable with emoji, humour, and informal language when the context calls for it. Authentic over polished.</div></div>
+    <div class="card" style="border-top:3px solid #90ce76"><div class="card-kicker">Personality</div><div class="card-title">Bold and Unafraid</div><div class="card-body">Speaks clearly about LGBTQIA+ rights. Takes positions. Uses correct terminology. Never vague when it matters.</div></div>
+    <div class="card" style="border-top:3px solid #93b8cb"><div class="card-kicker">Personality</div><div class="card-title">Made With Aroha</div><div class="card-body">Warmth and care are in the name, literally signed off with aroha in UniQ's own content. Gentleness is a feature.</div></div>
+    <div class="card" style="border-top:3px solid var(--lavender)"><div class="card-kicker">Personality</div><div class="card-title">Joyfully Queer</div><div class="card-body">Queerness is something to celebrate. The voice should pulse with joy, because joy is a form of resistance.</div></div>
+  </div>
+  <div class="fi" style="margin-top:2rem">
+    <div style="font-size:.65rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:.4rem">Application Guide</div>
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1rem;font-family:'Pikimisa Regular','Lexend Deca',sans-serif">Voice in Context</div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table class="tbl">
+        <thead><tr><th>Context</th><th>Tone</th><th>Example Language</th><th>Avoid</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Instagram / TikTok</strong></td><td>Casual, Playful, Emoji-friendly</td><td>"Come hang 🌈 free pizza, good vibes, even better people"</td><td>Corporate speak, hashtag stuffing</td></tr>
+          <tr><td><strong>Event Announcements</strong></td><td>Warm, Clear, Inviting</td><td>"Hey everyone! Join us this Friday for our monthly social..."</td><td>Formal preamble, passive voice</td></tr>
+          <tr><td><strong>Advocacy Statements</strong></td><td>Firm, Informed, Proud</td><td>"UniQ THW stands with trans students. This policy is harmful and we are calling on the university to act."</td><td>Vague hedging, apologetic framing</td></tr>
+          <tr><td><strong>University Comms</strong></td><td>Professional, Clear, Confident</td><td>"UniQ Te Herenga Waka respectfully requests that..."</td><td>Overly casual, slang, emoji</td></tr>
+          <tr><td><strong>Mental Health / Support</strong></td><td>Gentle, Safe, Non-prescriptive</td><td>"You do not have to be okay right now. We are here."</td><td>Toxic positivity, platitudes</td></tr>
+          <tr><td><strong>Fundraising / Campaigns</strong></td><td>Energetic, Urgent, Personal</td><td>"Every dollar keeps our community running. Let's hit $500 this week!"</td><td>Guilt-tripping, overly formal</td></tr>
+          <tr><td><strong>Email Newsletter</strong></td><td>Friendly, Organised, Informative</td><td>"Hey there! Here's what's happening with UniQ this week..."</td><td>Dry summaries, no personality</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div class="dodont fi" style="margin-top:1.5rem">
+    <div class="do-box">
+      <div class="dd-label">Do</div>
+      <ul class="rules">
+        <li>Use "they/them" as default singular pronoun in copy</li>
+        <li>Spell out LGBTQIA+ in full on first use per document</li>
+        <li>Use "queer" positively and proudly (it's been reclaimed)</li>
+        <li>Use inclusive greetings: "Hey everyone", "Kia ora koutou"</li>
+        <li>Reference Te Reo Maori naturally, including aroha, waka, koutou</li>
+        <li>Sign off community content "With aroha, UniQ" where appropriate</li>
+        <li>Use THW (not Vic) when shortening the university name</li>
+      </ul>
+    </div>
+    <div class="dont-box">
+      <div class="dd-label">Do Not</div>
+      <ul class="rules">
+        <li>Binary or exclusionary greetings ("guys", "ladies and gentlemen")</li>
+        <li>Conflating gender identity with sexual orientation</li>
+        <li>Acronyms without expansion on first use</li>
+        <li>Passive voice in advocacy statements (own the position)</li>
+        <li>Tone-policing or minimising community concerns</li>
+        <li>Outdated terminology: check current community standards regularly</li>
+        <li>Em dashes: use commas, periods, or parentheses instead</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 07 AUDIENCE ========== -->
+<section id="audience" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">07</div>
+    <div class="sec-title">Target Audience</div>
+    <div class="sec-desc">Who UniQ speaks to, their needs, motivations, and how the brand serves them.</div>
+  </div>
+  <div class="g2 fi">
+    <div class="persona">
+      <div class="persona-strip" style="background:#df7d7d"></div>
+      <div class="persona-body">
+        <div class="persona-name">The Newly Out Student</div>
+        <div class="persona-sub">Primary · Age 18-22 · First/Second year</div>
+        <div class="card-body">Just arrived at uni, still navigating identity. May not know the community exists yet. Needs a low-barrier, warm entry point: not intimidating, not niche-coded.</div>
+        <div class="persona-cols">
+          <div><div class="persona-col-label">Needs</div><div class="card-body" style="font-size:.8rem">Safe space, peer connection, non-judgement, visible queer community</div></div>
+          <div><div class="persona-col-label">Channels</div><div class="card-body" style="font-size:.8rem">Instagram, TikTok, word of mouth, campus posters</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="persona">
+      <div class="persona-strip" style="background:#90ce76"></div>
+      <div class="persona-body">
+        <div class="persona-name">The Established Community Member</div>
+        <div class="persona-sub">Core · Age 20-26 · Upper years / Postgrad</div>
+        <div class="card-body">Knows and loves UniQ. Wants to deepen involvement: events, leadership, activism. Brand should feel like it belongs to them, not just at them.</div>
+        <div class="persona-cols">
+          <div><div class="persona-col-label">Needs</div><div class="card-body" style="font-size:.8rem">Leadership roles, advocacy platforms, belonging</div></div>
+          <div><div class="persona-col-label">Channels</div><div class="card-body" style="font-size:.8rem">Email newsletter, Discord, committee meetings</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="persona">
+      <div class="persona-strip" style="background:#efc26b"></div>
+      <div class="persona-body">
+        <div class="persona-name">The Ally</div>
+        <div class="persona-sub">Secondary - Diverse ages - Non-LGBTQIA+</div>
+        <div class="card-body">Supportive peers, friends, and family. Wants to show solidarity without centring themselves. UniQ's brand should make allyship easy and clear.</div>
+        <div class="persona-cols">
+          <div><div class="persona-col-label">Needs</div><div class="card-body" style="font-size:.8rem">Clear guidance, shared events, education resources</div></div>
+          <div><div class="persona-col-label">Channels</div><div class="card-body" style="font-size:.8rem">Website, social, campus notice boards</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="persona">
+      <div class="persona-strip" style="background:#93b8cb"></div>
+      <div class="persona-body">
+        <div class="persona-name">University and External Stakeholders</div>
+        <div class="persona-sub">Tertiary - Staff, Sponsors, Media</div>
+        <div class="card-body">University admin, potential sponsors, partner organisations, and media. Need professional-grade brand materials and clear articulation of UniQ's purpose and values.</div>
+        <div class="persona-cols">
+          <div><div class="persona-col-label">Needs</div><div class="card-body" style="font-size:.8rem">Formal docs, media kit, professional comms</div></div>
+          <div><div class="persona-col-label">Channels</div><div class="card-body" style="font-size:.8rem">Email, PDF reports, website, LinkedIn</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 08 MOTION ========== -->
+<section id="motion" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">08</div>
+    <div class="sec-title">Motion and Animation</div>
+    <div class="sec-desc">How UniQ moves: principles, timing, easing, and practical guidance for digital motion.</div>
+  </div>
+  <div class="g3 fi">
+    <div class="card"><div class="card-kicker">Principle 1</div><div class="card-title">Joyful, not distracting</div><div class="card-body">Animation should add delight, not noise. Every motion should have a purpose. When in doubt, animate less.</div></div>
+    <div class="card"><div class="card-kicker">Principle 2</div><div class="card-title">Springy and energetic</div><div class="card-body">Use spring/overshoot easings for interactive elements. They feel alive. Avoid linear or purely ease-in transitions (too mechanical for UniQ's personality.</div></div>
+    <div class="card"><div class="card-kicker">Principle 3</div><div class="card-title">Respect accessibility</div><div class="card-body">Always honour <code>prefers-reduced-motion</code>. Provide static fallbacks for all animated content. Never use auto-playing video without controls.</div></div>
+  </div>
+  <div class="fi" style="margin-top:1.5rem;display:grid;grid-template-columns:1fr 1fr;gap:1.25rem">
+    <div class="card" style="padding:0;overflow:hidden">
+      <table class="tbl" style="table-layout:fixed">
+        <colgroup><col style="width:80px"><col style="width:190px"><col></colgroup>
+        <thead><tr><th>Duration</th><th>Easing</th><th>Use Case</th></tr></thead>
+        <tbody>
+          <tr><td>100ms</td><td>ease-out</td><td>Hover states, micro-feedback (button press)</td></tr>
+          <tr><td>200ms</td><td>ease-in-out</td><td>Colour transitions, opacity changes</td></tr>
+          <tr><td>300ms</td><td>cubic-bezier(0.34,1.56,0.64,1)</td><td>Icon scale, card lifts, tooltip appear</td></tr>
+          <tr><td>500ms</td><td>ease-out</td><td>Page section reveals, modal enter</td></tr>
+          <tr><td>600ms</td><td>ease-out with delay stagger</td><td>List items, card grids loading in sequence</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card" style="text-align:center">
+      <div class="card-kicker">Live Demo</div>
+      <p style="font-size:.82rem;color:var(--mid);margin-bottom:1.25rem">Hover the button to see the recommended interaction spring:</p>
+      <button class="motion-btn" style="background:var(--lavender);color:#fff">UniQ Primary Button</button>
+      <p style="font-size:.75rem;color:var(--mid);margin-top:1rem">CSS: <code style="color:var(--lavender)">transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.2s;</code></p>
+    </div>
+  </div>
+
+  <!-- GRADIENT ANIMATION -->
+  <div style="margin-top:2rem" class="fi">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Gradient Animation</div>
+    <div class="card">
+      <div class="card-kicker">Animated Rainbow Gradient</div>
+      <div style="height:8px;border-radius:999px;background:var(--grad);background-size:200% 100%;animation:gradShift 3s ease infinite;margin:1rem 0"></div>
+      <div class="card-body">Use a subtle background-position shift animation on gradient elements to create a living, breathing feel. Keep cycle time at 3-5 seconds so it is noticeable but not dizzying.</div>
+      <div style="margin-top:1rem;font-family:monospace;font-size:.72rem;color:var(--lavender);background:#f5f3ff;padding:.75rem;border-radius:8px;line-height:1.8">
+        @keyframes gradShift {<br>
+        &nbsp;&nbsp;0% { background-position: 0% 50%; }<br>
+        &nbsp;&nbsp;50% { background-position: 100% 50%; }<br>
+        &nbsp;&nbsp;100% { background-position: 0% 50%; }<br>
+        }<br>
+        .element {<br>
+        &nbsp;&nbsp;background: var(--grad);<br>
+        &nbsp;&nbsp;background-size: 200% 100%;<br>
+        &nbsp;&nbsp;animation: gradShift 4s ease infinite;<br>
+        }
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 09 IMAGERY ========== -->
+<section id="imagery" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">09</div>
+    <div class="sec-title">Imagery and Photography</div>
+    <div class="sec-desc">Visual style guidance for photos, illustrations, and graphic elements used across UniQ materials.</div>
+  </div>
+  <div class="g3 fi">
+    <div class="card" style="border-top:3px solid #df7d7d"><div class="card-kicker">Photography Style</div><div class="card-title">Real, Candid, Joyful</div><div class="card-body">Authentic photos of real UniQ members are always preferred over stock. Show genuine moments of connection, celebration, and community. Colour-grade warmly, with a slight boost in saturation to complement the brand palette.</div></div>
+    <div class="card" style="border-top:3px solid #efc26b"><div class="card-kicker">People Photography</div><div class="card-title">Representational and Inclusive</div><div class="card-body">Feature diverse identities, expressions, and body types. No forced posing. Candid is better. Always get explicit consent for any photography used in brand materials.</div></div>
+    <div class="card" style="border-top:3px solid #90ce76"><div class="card-kicker">Illustration Style</div><div class="card-title">Flat, Rounded, Colourful</div><div class="card-body">When using custom illustrations (event posters, social assets), use a flat vector style with rounded shapes that echoes the logo's organic geometry. Pull colours strictly from the brand palette.</div></div>
+    <div class="card" style="border-top:3px solid #93b8cb"><div class="card-kicker">Icons</div><div class="card-title">Rounded and Consistent</div><div class="card-body">Use a single consistent icon set (Lucide, Phosphor, or Heroicons with rounded stroke weight 1.5-2px). Never mix icon styles. Colour icons with brand palette fills or use outlined on white.</div></div>
+    <div class="card" style="border-top:3px solid #a381da"><div class="card-kicker">Graphic Elements</div><div class="card-title">Fluid, Organic Shapes</div><div class="card-body">Background blobs, organic dividers, and wave shapes (as seen in the business card design) reinforce UniQ's playful energy. These should use gradient fills from the brand palette.</div></div>
+    <div class="card" style="border-top:3px solid #cd9bc6"><div class="card-kicker">Image Overlays</div><div class="card-title">Subtle Gradient Washes</div><div class="card-body">When placing photos behind text, use a semi-transparent gradient overlay (5-15% opacity) in brand colours to maintain visual cohesion. Never use solid black overlays alone.</div></div>
+  </div>
+
+  <!-- PHOTOGRAPHY DO/DONT -->
+  <div style="margin-top:2rem" class="fi">
+    <div class="dodont">
+      <div class="do-box"><div class="dd-label">Do</div>
+        <ul class="rules">
+          <li>Use real event photos (they build trust and authenticity)</li>
+          <li>Warm colour grade: +15 saturation, +5 warmth in post</li>
+          <li>Show genuine emotion: laughter, hugging, pride</li>
+          <li>Feature Pride flags, rainbow accessories naturally in context</li>
+          <li>Get written consent from all identifiable subjects</li>
+        </ul>
+      </div>
+      <div class="dont-box"><div class="dd-label">Do Not</div>
+        <ul class="rules">
+          <li>Use stock photos of generic "diverse" groups (feels fake)</li>
+          <li>Heavily filter photos to the point of looking staged</li>
+          <li>Crop or centre non-white subjects as "diversity props"</li>
+          <li>Use photos that accidentally out anyone</li>
+          <li>Use cold, blue-heavy colour grades (off-brand)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 10 SOCIAL MEDIA ========== -->
+<section id="social" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">10</div>
+    <div class="sec-title">Social Media Guidelines</div>
+    <div class="sec-desc">Platform-specific specs, post formats, and community management principles.</div>
+  </div>
+  <div class="fi" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem">
+    <div class="social-card" style="border-top:3px solid #df7d7d">
+      <div class="social-icon">📸</div>
+      <div class="card-kicker">Instagram - @uniqthw</div>
+      <div class="card-title">Visual-First Platform</div>
+      <div class="card-body">
+        <div class="icon-row"><div class="icon-box">📐</div><div>Feed: 1080x1350px (4:5 portrait, default) or 1080x1080px (square)</div></div>
+        <div class="icon-row"><div class="icon-box">📖</div><div>Stories / Reels: 1080x1920px, 15-60s</div></div>
+        <div class="icon-row"><div class="icon-box">✍️</div><div>Caption: Warm hook, info, CTA, then 5-10 relevant hashtags</div></div>
+        <div class="icon-row"><div class="icon-box">🏷️</div><div>Core hashtags: #uniqthw #queerWellington #VicUniNZ #LGBTQIA</div></div>
+      </div>
+    </div>
+    <div class="social-card" style="border-top:3px solid #efc26b">
+      <div class="social-icon">🎬</div>
+      <div class="card-kicker">TikTok - @uniqthw</div>
+      <div class="card-title">Community and Discovery</div>
+      <div class="card-body">
+        <div class="icon-row"><div class="icon-box">📱</div><div>9:16 vertical, 1080x1920px, 15-60s sweet spot</div></div>
+        <div class="icon-row"><div class="icon-box">🎵</div><div>Use trending audio where tone-appropriate</div></div>
+        <div class="icon-row"><div class="icon-box">💬</div><div>Conversational, unpolished energy. Raw is okay. Real is better.</div></div>
+        <div class="icon-row"><div class="icon-box">🌈</div><div>Content pillars: Events, member spotlights, advocacy, behind-scenes</div></div>
+      </div>
+    </div>
+    <div class="social-card" style="border-top:3px solid #90ce76">
+      <div class="social-icon">📧</div>
+      <div class="card-kicker">Email Newsletter</div>
+      <div class="card-title">Direct Community Channel</div>
+      <div class="card-body">
+        <div class="icon-row"><div class="icon-box">✉️</div><div>From: info@uniqthw.org.nz</div></div>
+        <div class="icon-row"><div class="icon-box">📏</div><div>Max width: 600px - Single column layout</div></div>
+        <div class="icon-row"><div class="icon-box">🎨</div><div>Header: logo on white + 4px gradient bar top</div></div>
+        <div class="icon-row"><div class="icon-box">📅</div><div>Cadence: Fortnightly minimum - Weekly during busy periods</div></div>
+      </div>
+    </div>
+    <div class="social-card" style="border-top:3px solid #93b8cb">
+      <div class="social-icon">🌐</div>
+      <div class="card-kicker">Website - uniqthw.org.nz</div>
+      <div class="card-title">Hub and Reference Point</div>
+      <div class="card-body">
+        <div class="icon-row"><div class="icon-box">🏠</div><div>Home, Events, Resources, About, Contact</div></div>
+        <div class="icon-row"><div class="icon-box">📱</div><div>Mobile-first design - Accessible - Fast</div></div>
+        <div class="icon-row"><div class="icon-box">🌐</div><div>SEO: target "LGBTQIA Wellington student" keywords</div></div>
+        <div class="icon-row"><div class="icon-box">🔒</div><div>Include a safe browsing / privacy statement prominently</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POST PILLAR SPLIT - old display style -->
+  <div style="margin-top:2rem" class="fi">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Content Pillars (Post Mix)</div>
+    <div class="pillar-grid">
+      <div class="pillar-card" style="border-top:3px solid var(--lavender)">
+        <div class="pillar-pct" style="color:var(--lavender)">35%</div>
+        <div style="font-size:1.75rem;margin:.5rem 0">📣</div>
+        <div class="pillar-name">Events</div>
+        <div class="pillar-desc">Event announcements, countdowns, during-event stories, post-event recaps. Always include: date, time, location, accessibility info.</div>
+        <span class="pill p-lav">Priority</span>
+      </div>
+      <div class="pillar-card" style="border-top:3px solid var(--mint)">
+        <div class="pillar-pct" style="color:var(--mint)">25%</div>
+        <div style="font-size:1.75rem;margin:.5rem 0">👥</div>
+        <div class="pillar-name">Community</div>
+        <div class="pillar-desc">Member spotlights, committee intros, shared experiences, "day in the life". Humanises the organisation and builds connection.</div>
+        <span class="pill p-mint">Core</span>
+      </div>
+      <div class="pillar-card" style="border-top:3px solid var(--coral)">
+        <div class="pillar-pct" style="color:var(--coral)">20%</div>
+        <div style="font-size:1.75rem;margin:.5rem 0">✊</div>
+        <div class="pillar-name">Advocacy</div>
+        <div class="pillar-desc">LGBTQIA+ rights, local and national issues, solidarity posts, educational content on identity and history.</div>
+        <span class="pill p-coral">Mission</span>
+      </div>
+      <div class="pillar-card" style="border-top:3px solid var(--peach)">
+        <div class="pillar-pct" style="color:var(--peach)">20%</div>
+        <div style="font-size:1.75rem;margin:.5rem 0">🎉</div>
+        <div class="pillar-name">Celebration</div>
+        <div class="pillar-desc">Pride months, identity days, anniversaries, wins. Joy is on-brand. This keeps the feed from feeling heavy.</div>
+        <span class="pill p-peach">Energy</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 11 COLLATERAL ========== -->
+<section id="collateral" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">11</div>
+    <div class="sec-title">Collateral and Print</div>
+    <div class="sec-desc">Specs and design principles for physical and downloadable brand materials.</div>
+  </div>
+  <div class="fi" style="background:var(--off);border:1px solid var(--border);border-radius:12px;padding:1rem 1.25rem;margin-bottom:1.5rem;display:flex;gap:1.5rem;flex-wrap:wrap;align-items:center">
+    <div style="font-size:.8rem;color:var(--mid)"><strong style="color:var(--ink)">File formats:</strong> Always export PDF for print, PNG/WebP for digital, SVG for logos.</div>
+    <div style="font-size:.8rem;color:var(--mid)"><strong style="color:var(--ink)">Bleed:</strong> Add 3mm bleed to all print files.</div>
+    <div style="font-size:.8rem;color:var(--mid)"><strong style="color:var(--ink)">Resolution:</strong> 300dpi minimum for print, 72dpi for screen.</div>
+  </div>
+  <div class="g3 fi">
+
+    <div class="card" style="border-top:3px solid #df7d7d">
+      <div class="card-kicker">Business Card</div>
+      <div class="card-title">85 x 54mm (standard)</div>
+      <div class="card-body">
+        <strong>Front:</strong> UniQ logo (left, white bg) + organic gradient wave (right, rainbow gradient) + social handles + email + website in white on gradient.<br><br>
+        <strong>Back:</strong> Full secondary logo centred on white background with rounded rectangle border + 4px gradient border.<br><br>
+        <strong>Print spec:</strong> 350gsm matt laminate, CMYK, 3mm bleed.
+      </div>
+      <span class="pill p-lav">As designed in Canva</span>
+    </div>
+
+    <div class="card" style="border-top:3px solid #efc26b">
+      <div class="card-kicker">Event Poster</div>
+      <div class="card-title">A3 / A4 / 1080x1080</div>
+      <div class="card-body">
+        Gradient or white background. Logo top-left. Event title in large Pikimisa. Date/time/location in a contrasting tag using Lexend Deca. Accessible: all text meets AA contrast.<br><br>
+        <strong>Export:</strong> PDF for print, PNG/WebP for digital.
+      </div>
+      <span class="pill p-mint">Canva Template</span>
+    </div>
+
+    <div class="card" style="border-top:3px solid #90ce76">
+      <div class="card-kicker">Stickers</div>
+      <div class="card-title">Circular, Die-cut shapes</div>
+      <div class="card-body">
+        Icon logo on white (die-cut circle), icon on gradient fill, "UniQ THW" wordmark white on gradient (kiss-cut sheet).<br><br>
+        Minimum 50mm diameter for legibility. Vinyl print, waterproof finish.
+      </div>
+      <span class="pill p-sky">Print Ready</span>
+    </div>
+
+    <div class="card" style="border-top:3px solid #93b8cb">
+      <div class="card-kicker">Merch</div>
+      <div class="card-title">Tees, Totes, Pins</div>
+      <div class="card-body">
+        <strong>T-shirts:</strong> Coloured logo on white garment (DTG print) or BW logo on coloured garment.<br>
+        <strong>Tote bags:</strong> Single-colour screen print preferred for cost.<br>
+        <strong>Enamel pins:</strong> Icon-Q design, hard enamel, 25mm.
+      </div>
+      <span class="pill p-sky">Brand Merch</span>
+    </div>
+
+    <div class="card" style="border-top:3px solid #a381da">
+      <div class="card-kicker">Letterhead / Documents</div>
+      <div class="card-title">A4 Official Template</div>
+      <div class="card-body">
+        Logo top-left. Gradient accent bar in header and footer. Lexend Deca body text. Address block bottom right. Contact details in small Mid Grey. Use for formal university correspondence.
+      </div>
+      <span class="pill p-lav">Official Use</span>
+    </div>
+
+    <div class="card" style="border-top:3px solid #cd9bc6">
+      <div class="card-kicker">Presentation Deck</div>
+      <div class="card-title">16:9 Slide Template</div>
+      <div class="card-body">
+        Title slide: gradient background + white logo. Content slides: white background + logo watermark top-right (15% opacity). Section dividers: gradient full-bleed. Footer: UniQ logo + slide number in Ink.
+      </div>
+      <span class="pill p-blush">Canva Template</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ========== 12 DIGITAL ========== -->
+<section id="digital" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">12</div>
+    <div class="sec-title">Digital Presence</div>
+    <div class="sec-desc">Web, UI components, and digital-first design specs for the UniQ online identity.</div>
+  </div>
+  <div class="g2 fi">
+    <div class="card" style="border-top:3px solid #df7d7d">
+      <div class="card-kicker">UI Component Spec</div>
+      <div class="card-title">Core Components</div>
+      <div style="display:flex;flex-direction:column;gap:1rem;margin-top:.75rem">
+        <div>
+          <button style="background:var(--lavender);color:#fff;border:none;padding:.6rem 1.5rem;border-radius:999px;font-family:'Lexend Deca',sans-serif;font-size:.875rem;font-weight:700;cursor:default;margin-right:.5rem">Primary Button</button>
+          <button style="background:transparent;color:var(--lavender);border:2px solid var(--lavender);padding:.6rem 1.5rem;border-radius:999px;font-family:'Lexend Deca',sans-serif;font-size:.875rem;font-weight:700;cursor:default">Secondary</button>
+        </div>
+        <input type="text" placeholder="Email address..." style="padding:.6rem 1rem;border:1px solid var(--border);border-radius:8px;font-family:'Lexend Deca',sans-serif;font-size:.875rem;width:100%;outline-color:var(--lavender)" />
+        <div style="background:#f5f3ff;border:1px solid #d8b4fe;border-radius:8px;padding:.875rem;font-size:.82rem;color:#5b21b6">Info state: uses lavender tints for notifications and callouts</div>
+        <div style="background:#f3fdf0;border:1px solid var(--mint);border-radius:8px;padding:.875rem;font-size:.82rem;color:#166534">Success state: uses mint green tints</div>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid #efc26b">
+      <div class="card-kicker">Web Typography Sizes</div>
+      <div class="card-title">Responsive Scale</div>
+      <div class="card-body">
+        <table style="width:100%;font-size:.8rem;border-collapse:collapse">
+          <tr style="border-bottom:1px solid var(--border)"><th style="text-align:left;padding:.4rem 0;color:var(--mid)">Element</th><th style="text-align:left;padding:.4rem 0;color:var(--mid)">Font</th><th style="text-align:left;padding:.4rem 0;color:var(--mid)">Mobile</th><th style="text-align:left;padding:.4rem 0;color:var(--mid)">Desktop</th></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.4rem 0">H1</td><td>Pikimisa</td><td>2rem</td><td>3.5rem</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.4rem 0">H2</td><td>Pikimisa</td><td>1.5rem</td><td>2.5rem</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.4rem 0">H3</td><td>Lexend Deca 700</td><td>1.2rem</td><td>1.75rem</td></tr>
+          <tr style="border-bottom:1px solid var(--border)"><td style="padding:.4rem 0">Body</td><td>Lexend Deca 400</td><td>1rem</td><td>1rem</td></tr>
+          <tr><td style="padding:.4rem 0">Label</td><td>Lexend Deca 700</td><td>0.68rem</td><td>0.68rem</td></tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAVICON SECTION -->
+  <div style="margin-top:1.5rem" class="fi">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Favicon and App Icon Specs</div>
+    <div class="g3">
+      <div class="card"><div class="card-kicker">Web Favicon</div>
+        <div class="card-body">
+          <div>16x16px: simplified Q icon (BW or gradient)</div>
+          <div style="margin-top:.35rem">32x32px: standard web favicon</div>
+          <div style="margin-top:.35rem">180x180px: Apple touch icon</div>
+          <div style="margin-top:.35rem">192x192px: Android home screen icon</div>
+          <div style="margin-top:.5rem"><strong>Format:</strong> ICO (16+32 bundled), PNG for others</div>
+        </div>
+      </div>
+      <div class="card"><div class="card-kicker">Email Signature</div>
+        <div class="card-body">
+          <div><strong>Format:</strong> Lexend Deca, plain text preferred for deliverability</div>
+          <div style="margin-top:.5rem;font-size:.8rem;border-left:3px solid var(--lavender);padding-left:.75rem;line-height:1.8">
+            <strong>[Name]</strong> - [Role]<br>
+            UniQ Te Herenga Waka<br>
+            info@uniqthw.org.nz<br>
+            uniqthw.org.nz<br>
+            Instagram/TikTok: @uniqthw
+          </div>
+          <div style="margin-top:.5rem">Logo: 120px wide PNG (2x) inline image</div>
+        </div>
+      </div>
+      <div class="card"><div class="card-kicker">Social Profile Images</div>
+        <div class="card-body">
+          <div>Instagram: 320x320px (displays at 110x110)</div>
+          <div style="margin-top:.35rem">TikTok: 200x200px minimum</div>
+          <div style="margin-top:.5rem">All: Icon-coloured logo centred on white background with generous padding (20% white space each side)</div>
+          <div style="margin-top:.5rem"><strong>Format:</strong> PNG, no JPEG compression artefacts</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 13 ACCESSIBILITY ========== -->
+<section id="accessibility" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">13</div>
+    <div class="sec-title">Accessibility Standards</div>
+    <div class="sec-desc">UniQ is for everyone. Accessibility is not optional. These are the minimum standards for all brand materials.</div>
+  </div>
+  <div class="fi" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.25rem">
+    <div class="card" style="border-top:3px solid #df7d7d">
+      <div class="card-kicker">Visual Accessibility</div><div class="card-title">Colour and Contrast</div>
+      <div class="card-body">
+        <ul class="rules" style="margin-top:.5rem">
+          <li>Normal text: minimum 4.5:1 contrast ratio (WCAG AA)</li>
+          <li>Large text (18px+ bold, 24px+ normal): minimum 3:1</li>
+          <li>Never convey meaning through colour alone; always add text or icons</li>
+          <li>Avoid placing light gradient colours over white for text</li>
+          <li>Test every design with a colour blindness simulator</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid #efc26b">
+      <div class="card-kicker">Typography Accessibility</div><div class="card-title">Readability</div>
+      <div class="card-body">
+        <ul class="rules" style="margin-top:.5rem">
+          <li>Minimum 16px for all body text on screens</li>
+          <li>Line height minimum 1.5 for body paragraphs</li>
+          <li>Maximum line length 75 characters for comfortable reading</li>
+          <li>Never use justified text alignment, as it causes spacing issues for dyslexic readers</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid #90ce76">
+      <div class="card-kicker">Digital / Web</div><div class="card-title">WCAG 2.1 AA</div>
+      <div class="card-body">
+        <ul class="rules" style="margin-top:.5rem">
+          <li>All images must have descriptive alt text</li>
+          <li>All interactive elements must be keyboard-navigable</li>
+          <li>Focus states must be clearly visible (never removed)</li>
+          <li>All video content must have captions</li>
+          <li>Respect <code>prefers-reduced-motion</code> in CSS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="card" style="border-top:3px solid #93b8cb">
+      <div class="card-kicker">Content Accessibility</div><div class="card-title">Inclusive Language</div>
+      <div class="card-body">
+        <ul class="rules" style="margin-top:.5rem">
+          <li>Use plain language (aim for Year 8 reading level) in community comms</li>
+          <li>Provide content warnings for potentially distressing topics</li>
+          <li>Offer text alternatives to visual-only information</li>
+          <li>Use structured headings in all digital documents (H1, H2, H3)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 14 GOVERNANCE ========== -->
+<section id="governance" class="sec">
+  <div class="sec-head fi">
+    <div class="sec-kicker">14</div>
+    <div class="sec-title">Brand Governance and Usage</div>
+    <div class="sec-desc">Who owns the brand, how it is approved, and what to do when you need to create something new.</div>
+  </div>
+  <div class="g2 fi">
+
+    <div class="card" style="border-top:3px solid #df7d7d">
+      <div class="card-kicker">Brand Stewardship</div>
+      <div class="card-title">Who Is Responsible</div>
+      <div class="card-body">
+        <div class="icon-row"><div class="icon-box">👑</div><div><strong>UniQ Committee</strong>: responsible for using assets correctly per this guide</div></div>
+        <div class="icon-row" style="margin-top:.5rem"><div class="icon-box">🎨</div><div><strong>Social Media Officer</strong>: maintains brand files, reviews visual assets</div></div>
+        <div class="icon-row" style="margin-top:.5rem"><div class="icon-box">📣</div><div><strong>Publications Officer</strong>: approves voice/tone of public-facing copy</div></div>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #efc26b">
+      <div class="card-kicker">Approval Process</div>
+      <div class="card-title">Before Publishing</div>
+      <div class="card-body">
+        <div style="display:flex;flex-direction:column;gap:.5rem;margin-top:.5rem">
+          <div style="display:flex;align-items:flex-start;gap:.75rem"><span style="background:var(--lavender);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">1</span><div>Create asset using brand templates in Canva</div></div>
+          <div style="display:flex;align-items:flex-start;gap:.75rem"><span style="background:var(--lavender);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">2</span><div>Self-check against this brand kit</div></div>
+          <div style="display:flex;align-items:flex-start;gap:.75rem"><span style="background:var(--lavender);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">3</span><div>Share with Social Media Officer for review (advocacy content: Publications Officer too)</div></div>
+          <div style="display:flex;align-items:flex-start;gap:.75rem"><span style="background:var(--lavender);color:#fff;border-radius:50%;width:24px;height:24px;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:700;flex-shrink:0">4</span><div>Publish or hand to print supplier</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #90ce76">
+      <div class="card-kicker">Asset Storage</div>
+      <div class="card-title">Where to Find Files</div>
+      <div class="card-body">
+        <div class="icon-row"><div class="icon-box">🎨</div><div><strong>Canva Brand Kit</strong>: live templates, locked brand colours and fonts (Lexend Deca + Pikimisa)</div></div>
+        <div class="icon-row" style="margin-top:.5rem"><div class="icon-box">📁</div><div><strong>Google Drive / shared folder</strong>: exported PNGs, SVGs, PDFs ready to use</div></div>
+        <div class="icon-row" style="margin-top:.5rem"><div class="icon-box">📧</div><div>Contact <strong>info@uniqthw.org.nz</strong> for access or missing files</div></div>
+      </div>
+    </div>
+
+    <div class="card" style="border-top:3px solid #93b8cb">
+      <div class="card-kicker">Third-Party Usage</div>
+      <div class="card-title">Partners and Sponsors</div>
+      <div class="card-body">
+        <ul class="rules" style="margin-top:.5rem">
+          <li>Sponsors may use the UniQ logo in co-branded materials with prior written approval</li>
+          <li>Always provide logo files directly; never send editable source files to external parties</li>
+          <li>Co-branded materials must be reviewed and approved by UniQ committee before publishing</li>
+          <li>Unauthorised use of UniQ branding should be reported to the committee immediately</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <div style="margin-top:2.5rem;padding-top:2rem;border-top:1px solid var(--border)" class="fi">
+    <div style="font-size:1rem;font-weight:700;margin-bottom:1.25rem">Brand Kit Version History</div>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table class="tbl" style="font-size:.82rem">
+        <thead><tr><th>Version</th><th>Date</th><th>Changes</th><th>Author</th></tr></thead>
+        <tbody>
+          <tr><td>1.0</td><td>11 March 2026</td><td>Initial full brand kit. All sections from Canva brand assets. Fonts: Lexend Deca + Pikimisa Regular.</td><td>Khai Dye-Brinkman</td></tr>
+          <tr><td>TBC</td><td>TBC</td><td>Future versions tracked here as brand evolves</td><td>TBC</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<div class="grad-strip"></div>
+<footer class="footer">
+  <strong>UniQ Te Herenga Waka · Brand Kit v3.0 - March 2026</strong><br>
+  Fonts: Pikimisa Regular (display) - Lexend Deca (body) - Colours from brand SVG assets<br>
+  info@uniqthw.org.nz - uniqthw.org.nz - @uniqthw
+</footer>
+
+
+  <!-- Brand Kit Scripts -->
+  <script src="main.js" defer></script>
+</body>
+</html>
